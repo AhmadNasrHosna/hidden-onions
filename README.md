@@ -11,12 +11,6 @@
 
 2. If there are a link in my UI design looks like button style, should I use the same button classes or create a new special styles for that link?
 
-الفكرة بس يا دكتور في اني فاهم الستراكتشر =المحطوط لشغل الcss وال pug لكن لما باجي اطبق على شغل كبير بحسالعملية بتفتح مني ومش عارف انظم الحاجات الفرعية او الصغيرة واخليها تتكلم مع بعضها. طيب انا هيبقى عندي استفسارات طول ما انا بتدرب مع نفسي، بمجرد ما يقف قدامي حاجة هبعتلك واستفسر منك فيها.
-
-الورك فلو اللي بشتغل بيها بطور فيها دايما وهكذا لكن بيتهيألي لما انزل شغل هيبقى الوضع مختلف ؟
-يعني لما يخلص شغل وبعمل build للبروجكت وpush للسيرفر بس خلاص كده ولا الوضع بيبقى عامل ازاي؟
-+
-
 3. Search & learn about 'margin-inline' and all properties using this logic.
 
 4. Search & learn about max-width/max-height and the difference between it and regular width/height
@@ -25,6 +19,6 @@
 
 6. Search & learn about `flex-basis` and the difference between using it and regular width.
 
-7. Fonts look so ugly on firfox.
+7. Fonts are looking so ugly in Firefox!
 
 8. How to write 2 properties with @supports feature.
