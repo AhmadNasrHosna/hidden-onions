@@ -465,7 +465,7 @@ task("build", series(
     function (done) {
         browserSync.init({
             notify: false,
-            port: 9000,
+            port: 7000,
             server: {
                 baseDir: buildDir
             }

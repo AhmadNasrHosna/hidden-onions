@@ -2,13 +2,33 @@
   margin: 0;
   padding: 0;
 
-  li {
-    display: block;
-  }
-
   &--inline {
     li {
       display: inline-block;
+    }
+  }
+
+  &--inline-atSmall {
+    @mixin at Small {
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+  &--inline-atMedium {
+    @mixin at Medium {
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+  &--inline-atLarge {
+    @mixin at Large {
+      li {
+        display: inline-block;
+      }
     }
   }
 
@@ -20,4 +40,19 @@
       }
     }
   }
+
+  &--no-bullets { /* Remove li Bullets with zero-width space for accessability stuff */
+    li {
+      list-style-type: none;
+      
+      &::before { /* remove bullets */
+        content: "\200B"; /* add zero-width space */
+        clip: rect(0 0 0 0);
+        height: 1px; width: 1px;
+        position: absolute;
+      }
+    }
+  }
+
 }
+

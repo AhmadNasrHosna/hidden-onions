@@ -1,0 +1,98 @@
+.why-hidden-onions {
+  background: var(--bg-light);
+
+  .page-section__title {
+    @media (max-width: 767px) { @mixin font-size 3 }
+
+    @mixin at Medium {
+      max-width: 67rem;
+    }
+  }
+
+  .join-newsletter-link {
+    letter-spacing: .03em;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: #000000;
+    color: #ffffff;
+    padding: .65em 1em .6em;
+    border-radius: 2px;
+    box-shadow: 0 2px 7px rgba(0,0,0,.25);
+  }
+}
+
+.hidden-onions-colophon {
+  margin-top: 5.8rem;
+
+  figure {
+    margin: 0 -20px;
+    user-select: none;
+    -webkit-user-drag: none;
+
+    @mixin at Medium {
+      width: 45%;
+      float: left;
+      margin: 0;
+    }
+
+    img { mix-blend-mode: color-burn }
+  }
+
+  h4 {
+    margin: 0 0 2rem;
+    text-transform: uppercase;
+    @mixin font-size 1.15;
+    font-weight: 500;
+    letter-spacing: .1em;
+  }
+
+  .wrapper {
+    padding-top: 3.2em;
+    margin-top: -.5em;
+
+    @media (min-width: 767px) and (max-width: 986px) {
+      padding-top: .2em;
+    }
+
+    @mixin at Medium {
+      width: 55%;
+      float: right;
+      padding-left: 4em;
+    }
+
+    p {
+      font-weight: 500;
+      @mixin font-size 1.6;
+
+      &:last-of-type {
+        margin-bottom: 3.15rem
+      }
+    }
+  }
+}
+
+@supports (display: flex) {
+  .hidden-onions-colophon {
+    @mixin at Medium {
+      display: flex;
+      align-items: center;
+    }
+
+    figure {
+      @mixin at Medium {
+        width: auto;
+        float: none;
+        flex-basis: 45%;
+      }
+    }
+
+    .wrapper {
+      @mixin at Medium {
+        width: auto;
+        float: none;
+        flex-basis: 55%;
+        padding-top: 0 ;
+      }
+    }
+  }
+}

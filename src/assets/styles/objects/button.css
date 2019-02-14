@@ -1,17 +1,19 @@
 .button {
   display: inline-block;
-  height: 50px;
-  line-height: 48px;
-  border-radius: 25px;
-  padding: 0 35px;
+  height: 5rem;
+  @mixin line-height 4.8;
+  padding: 0 2em;
   border: 1px solid;
   font-family: inherit;
-  box-shadow: 0 7px 21px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   text-align: center;
+  white-space: nowrap;
+  border-radius: 2px;
+  transition: all 200ms ease;
+
   &:focus {
     outline: none;
-    transform: translate(2px, 2px);
+    transform: translate(1px, 1px);
     box-shadow: none;
   }
   &--plain {
@@ -38,8 +40,36 @@
       color: #000;
     }
   }
-  &--block {
+  
+  &--block { width: 100% }
+
+  &--block-only-small {
     width: 100%;
-    padding-inline: 15px;
+    @mixin at Small { width: auto }
   }
+
+  &--block-center {
+    display: block;
+    margin-inline: auto;
+  }
+
+
+  &--large-p-inline {
+    padding-inline: 2.5em;
+
+    @mixin at Small {
+      padding-inline: 5.4em;
+    }
+  }
+
+  &--font-w-100 { font-weight: 100 }
+  &--font-w-200 { font-weight: 200 }
+  &--font-w-300 { font-weight: 300 }
+  &--font-w-400 { font-weight: 400 }
+  &--font-w-500 { font-weight: 500 }
+  &--font-w-600 { font-weight: 600 }
+  &--font-w-700 { font-weight: 700 }
+  &--font-w-800 { font-weight: 800 }
+  &--font-w-900 { font-weight: 900 }
+
 }

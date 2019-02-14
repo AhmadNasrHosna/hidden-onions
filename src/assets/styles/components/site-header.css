@@ -1,0 +1,94 @@
+.site-header {
+  border-bottom: 1px solid var(--border-light);
+
+  .site-header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.7em;
+    position: relative;
+  }
+
+  &__brand {
+    h1 {
+      @mixin font-size 2.4;
+      font-weight: 700;
+      letter-spacing: .02em;
+      position: relative;
+
+      a {
+        transition: box-shadow 300ms ease;
+
+        &:active,
+        &:focus {
+          box-shadow: inset 0 0 0 4px var(--bg-dark);
+        }
+      }
+    }
+  }
+
+}
+
+.site-header__nav {
+  display: none;
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  left: 0;
+  top: 77px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 300ms ease;
+
+  @media (min-width: 840px) { /* Custom media for 'at Medium' */
+    display: block;
+    position: static;
+    width: auto;
+    max-height: initial;
+  }
+
+  li {
+    a {
+      display: block;
+      padding: 2em 3em;
+      letter-spacing: .03em;
+      @mixin font-size 1.4;
+
+      @mixin at Medium {
+        padding: 3.2em 3em 3.1em;
+        @mixin font-size 1.25;
+        font-weight: 500;
+      }
+
+      @media (min-width: 770px) and (max-width: 990px) {
+        padding: 3.4em 1.2em;
+      }
+
+      transition: all 300ms ease;
+      position: relative;
+      font-weight: 600;
+
+      &:hover {
+        background: var(--bg-light);
+      }
+
+      svg {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        right: 3em;
+        top: 50%;
+        margin-top: -6px;
+
+        @mixin at Medium {
+          width: 14px;
+          height: 14px;
+          position: static;
+          vertical-align: text-bottom;
+          margin-right: -3px;
+        }
+
+      }
+    }
+  }
+}

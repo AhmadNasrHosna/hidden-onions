@@ -1,6 +1,16 @@
 /* Fonts */
 @import '../stylesheets/inter';
+@import '../stylesheets/sg';
+@import '../stylesheets/manrope';
+@import '../stylesheets/buenard';
+@import '../stylesheets/sumana';
+@import '../stylesheets/kollektif';
+@import '../stylesheets/bifocals';
+
+
 
 :root {
-  --primary-font: "Inter", system-ui, sans-serif;
+  --primary-font: "Bifocals", system-ui, sans-serif;
+  --serif-1: "sumana", system-ui, sans-serif;
+  --serif-2: "buenard", system-ui, sans-serif;
 }

@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Sumana';
+    src: url('../../../assets/fonts/sumana/Sumana-Bold.eot');
+    src: url('../../../assets/fonts/sumana/Sumana-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../../assets/fonts/sumana/Sumana-Bold.woff2') format('woff2'),
+        url('../../../assets/fonts/sumana/Sumana-Bold.woff') format('woff'),
+        url('../../../assets/fonts/sumana/Sumana-Bold.svg#Sumana-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sumana';
+    src: url('../../../assets/fonts/sumana/Sumana-Regular.eot');
+    src: url('../../../assets/fonts/sumana/Sumana-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../../assets/fonts/sumana/Sumana-Regular.woff2') format('woff2'),
+        url('../../../assets/fonts/sumana/Sumana-Regular.woff') format('woff'),
+        url('../../../assets/fonts/sumana/Sumana-Regular.svg#Sumana-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

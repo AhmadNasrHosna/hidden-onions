@@ -1,0 +1,23 @@
+@define-mixin center $axis: xy {
+
+  @if $axis == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translate(-50%,-50%);
+  }
+
+  @else if $axis == x{
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+  
+  @else $axis == y {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+  
+}

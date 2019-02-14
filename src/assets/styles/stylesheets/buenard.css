@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Buenard';
+    src: url('../../../assets/fonts/buenard/Buenard-Bold.eot');
+    src: url('../../../assets/fonts/buenard/Buenard-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../../assets/fonts/buenard/Buenard-Bold.woff2') format('woff2'),
+        url('../../../assets/fonts/buenard/Buenard-Bold.woff') format('woff'),
+        url('../../../assets/fonts/buenard/Buenard-Bold.svg#Buenard-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Buenard';
+    src: url('../../../assets/fonts/buenard/Buenard-Regular.eot');
+    src: url('../../../assets/fonts/buenard/Buenard-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../../assets/fonts/buenard/Buenard-Regular.woff2') format('woff2'),
+        url('../../../assets/fonts/buenard/Buenard-Regular.woff') format('woff'),
+        url('../../../assets/fonts/buenard/Buenard-Regular.svg#Buenard-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

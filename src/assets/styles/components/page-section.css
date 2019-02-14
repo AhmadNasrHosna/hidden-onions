@@ -1,0 +1,25 @@
+.page-section {
+  padding-block: 85px;
+
+}
+
+
+.page-section__title {
+  font-family: 'Buenard', serif;
+  @mixin font-size 3.7;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.page-section__overview {
+  text-align: center;
+  color: var(--grey-light);
+  font-weight: 500;
+  @mixin font-size 1.25;
+  letter-spacing: .02em;
+  margin: .8em auto 4.3em;
+  line-height: 1.5;
+  width: 100%;
+  @mixin max-width 52;
+}
+
