@@ -33,93 +33,92 @@ main.site-content
                 a(href='#'  class="onion-brand")
                   h5.story__subtitle Past hidden onions
                   h2.story__title How we had to fire half our staff   
-
-  section.page-section.featured-women
+  
+  section(class="page-section featured-women "  + currentPage)
     .container.container--narrow
-      h2.page-section__title.no-m-top.align-center These Women Failed. Literally.
+      h2.page-section__title.no-m-top.align-center  These Women Failed. Literally.
       p.page-section__overview Success is the result of many ups and downs when running a business. Here we share stories of inspirational women who turned their failures into great success.
       .featured-women__inner
         .feature
           figure.feature__thumb
-            img(src='assets/images/featimg-04.jpg')
-            figcaption.onion-brand Growth
+            a(href="#")
+              img(src='assets/images/featimg-04.jpg')
+              figcaption.onion-brand Growth
           .feature__content
             h3.entrepreneur__name.no-m-block Bobbi Brown
             span.entrepreneur__tagline Founder of JustBOBBI and Bobbi brown
             p.entrepreneur__overview Learn how Bobbi took a small cosmetic company to a mult-milion dollar empire and why she decided to sell it and start her new lifestyle brand.
-          a(href='#') Read Feature
+          a(href='#' class='feature__read-more') Read Feature
         
         .feature
           figure.feature__thumb
-            img(src='assets/images/featimg-03.jpg')
-            figcaption.onion-brand When in doubt
+            a(href="#")
+              img(src='assets/images/featimg-05.jpg')
+              figcaption.onion-brand When in doubt
           .feature__content
             h3.entrepreneur__name.no-m-block Denise Paredes
             span.entrepreneur__tagline Founder of Equal Upresie
             p.entrepreneur__overview Destined to be an entrpreneur - Learn how Denise balances her life with her work. And how to dicover if you are on the right track with your business.
-          a(href='#') Read Feature
+          a(href='#' class='feature__read-more') Read Feature
         
         .feature
           figure.feature__thumb
-            img(src='assets/images/featimg-02.jpg')
-            figcaption.onion-brand Acquiring Customers
+            a(href="#")
+              img(src='assets/images/featimg-03.jpg')
+              figcaption.onion-brand Acquiring Customers
           .feature__content
             h3.entrepreneur__name.no-m-block Chole Fernanda 
             span.entrepreneur__tagline Founder of Zuba Mats
             p.entrepreneur__overview Learn how bobbi took a small cosmetic company to a mult-milion dollar empire and why she decided to sell it and start her new lifestyle brand.
-          a(href='#') Read Feature
+          a(href='#' class='feature__read-more') Read Feature
         
         .feature
           figure.feature__thumb
-            img(src='assets/images/featimg-01.jpg')
-            figcaption.onion-brand leading People
+            a(href="#")
+              img(src='assets/images/featimg-01.jpg')
+              figcaption.onion-brand leading People
           .feature__content
             h3.entrepreneur__name.no-m-block Chriselle Lim
             span.entrepreneur__tagline Founder of The Chriselle Factor
             p.entrepreneur__overview Destined to be an entrpreneur - Learn how Denise balances her life with her work. And how to dicover if you are on the right track with your business.
-          a(href='#') Read Feature       
+          a(href='#' class='feature__read-more') Read Feature       
 
 
   section(class="stories")
-    .container.container--narrow
-      .featured-stories.page-section.clearfix
-        .hero-story
-          figure.hero-story__image
-            img(src="assets/images/img-1.jpg", alt="Story Thumb")
-          header.hero-story__header
-              h4.hero-story__label.fs-italic.onion-brand
-                | Featured Story
-              h2.hero-story__title  
-                a(href="#") How to build a brand with raving fans. A masterclass from the founders of Smiggle.
-              p.hero-story__author.to-uppercase By: Jane Lu
-          section.hero-story__overview
-            p.no-m-bottom Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut vitae aliquid beatae perspiciatis eaque architecto facilis! Ipsa nobis quae illum voluptates sit sapiente id ab? Cumque magnam aliquam id dignissimos.
-        
-        .should-read-stories
-          h2 Stuff You Should Read
-          ul.list.list--no-bullets
-            li.story
-              h3.story__title.no-m-block
-                a(href="#") Taking a business from $0 to $5 million in revenue
-              p.story__description Interview with Tessa Thompson founder of Rarebit.
-            li.story
-              h3.story__title.no-m-block
-                a(href="#") What to do when your deeping debt and unsure about your business trajectory and profitability
-              p.story__description Interview with Janet co-founder of zenOrigami
-            li.story
-              h3.story__title.no-m-block
-                a(href="#") Taking a business from $0 to $5 million in revenue
-              p.story__description Interview with Tessa Thompson founder of Rarebit.
-            li.story
-              h3.story__title.no-m-block
-                a(href="#") What to do when your deeping debt and unsure about your business trajectory and profitability
-              p.story__description Interview with Janet co-founder of zenOrigami
-            li.story
-              h3.story__title.no-m-block
-                  a(href="#") Taking a business from $0 to $5 million in revenue
-              p.story__description Interview with Tessa Thompson founder of Rarebit.
-        
-      .latest-stories.page-section
+    div(class="featured-stories page-section clearfix "  + currentPage)
+      .container.container--narrow
+        .featured-stories__inner
+          block editors-pick
+            block config
+              - var heroImg = "assets/images/img-1.jpg";
+            include components/_editors-pick
+            block other
+              .should-read-stories
+                h2 Stuff You Should Read
+                ul.list.list--no-bullets
+                  li.story
+                    h3.story__title.no-m-block
+                      a(href="#") Taking a business from $0 to $5 million in revenue
+                    p.story__description Interview with Tessa Thompson founder of Rarebit.
+                  li.story
+                    h3.story__title.no-m-block
+                      a(href="#") What to do when your deeping debt and un.latestre about your business trajectory and profitability
+                    p.story__description Interview with Janet co-founder of zenOrigami
+                  li.story
+                    h3.story__title.no-m-block
+                      a(href="#") Taking a business from $0 to $5 million in revenue
+                    p.story__description Interview with Tessa Thompson founder of Rarebit.
+                  li.story
+                    h3.story__title.no-m-block
+                      a(href="#") What to do when your deeping debt and unsure about your business trajectory and profitability
+                    p.story__description Interview with Janet co-founder of zenOrigami
+                  li.story
+                    h3.story__title.no-m-block
+                        a(href="#") Taking a business from $0 to $5 million in revenue
+                    p.story__description Interview with Tessa Thompson founder of Rarebit.
+
+    .latest-stories.page-section
+      .container.container--narrow
         h2.page-section__title.no-m-top The Latest
         ul(class="list list--no-bullets clearfix")
           li.story
@@ -129,7 +128,7 @@ main.site-content
               h4(class="story__label no-m-top onion-brand") Editors Pick
               h3.story__title  
                 a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-              a(href="#" class="to-uppercase story__view-story-link") View Story
+              a(href="#" class="story__view-story-link") View Story
 
           li.story
             figure.story__thumb 
@@ -138,7 +137,7 @@ main.site-content
               h4(class="story__label no-m-top onion-brand") Editors Pick
               h3.story__title  
                 a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-              a(href="#" class="to-uppercase story__view-story-link") View Story
+              a(href="#" class="story__view-story-link") View Story
 
           li.story
             figure.story__thumb 
@@ -147,7 +146,7 @@ main.site-content
               h4(class="story__label no-m-top onion-brand") Editors Pick
               h3.story__title  
                 a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-              a(href="#" class="to-uppercase story__view-story-link") View Story
+              a(href="#" class="story__view-story-link") View Story
 
           li.story
             figure.story__thumb 
@@ -156,7 +155,7 @@ main.site-content
               h4(class="story__label no-m-top onion-brand") Editors Pick
               h3.story__title  
                 a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-              a(href="#" class="to-uppercase story__view-story-link") View Story
+              a(href="#" class="story__view-story-link") View Story
 
 
           li.story
@@ -166,7 +165,7 @@ main.site-content
               h4(class="story__label no-m-top onion-brand") Editors Pick
               h3.story__title 
                 a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-              a(href="#" class="to-uppercase story__view-story-link") View Story
+              a(href="#" class="story__view-story-link") View Story
 
           li.story
             figure.story__thumb 
@@ -175,11 +174,12 @@ main.site-content
               h4(class="story__label no-m-top onion-brand") Editors Pick
               h3.story__title  
                 a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-              a(href="#" class="to-uppercase story__view-story-link") View Story 
+              a(href="#" class="story__view-story-link") View Story 
 
         button(class="latest-stories__read-more-button button button--outline button--block-only-small button--block-center button--large-p-inline button--font-w-600")  Read more
-      
-      .business-resources.page-section
+    
+    .business-resources.page-section
+      .container.container--narrow
         .business-resources__inner.clearfix
           .business-resources__text
             h2.page-section__title.no-m-block Business Resources
@@ -207,7 +207,7 @@ main.site-content
                   a(href="#") Pitching and fundraising 
                   a(href="#") Hiring and firing
                   a(href="#") Finding suppliers
-  
+    
   block why-hidden-onions
     block config
       - var sectionTitle = "A platform to help you guys navigate the ultra hard, build-a-business world.";

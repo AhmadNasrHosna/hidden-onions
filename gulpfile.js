@@ -344,14 +344,15 @@ function optimizeImages() {
 
 /*
  * Rev all .tmp folder files
- * & Don't copy paths of DONTCopy */
+ * & Don't copy paths of DONTCopy 
+ * & Create assets folder */
 function revFiles() {
     const DONTCopy = [
         `!${tempDir}scripts/modernizr.js`,
-        `!${tempDir}index.html`,
+        `!${tempDir}index.html`, // a copy of index.html will not copy to `dist/assets`
         `!${tempDir}**/*.map`
     ];
-    return src([tempDir+'**/*', ...DONTCopy])
+    return src([tempDir+'**/*', ...DONTCopy]) // will copy ALL files with its folders
         .pipe(RevAll.revision({ dontRenameFile: ['.html'] }))
         .pipe(dest(buildDir + 'assets'))
 }
@@ -359,11 +360,15 @@ function revFiles() {
 /*
  * Inject all new revisioned files.
  * & Copy index.html from .tmp to dist folder */
+// This will work on injecting the full paths & outputs a path like this: '/docs/assets/styles/App.5e70335b.css' & the tool option (ignorePath) will remove '/docs' from the initial path.
 function injectFileNames() { 
-    return src(tempDir + 'index.html')
-        .pipe(inject(src([buildDir + 'assets/styles/**/*.css'], {read: false}), {ignorePath: '/docs', addRootSlash: false}))
-        .pipe(inject(src(buildDir + 'assets/scripts/vendor/*.js', {read: false}), {name: 'head', ignorePath: '/docs', addRootSlash: false}))
-        .pipe(inject(src([buildDir + 'assets/scripts/*.js', `!${buildDir}/assets/scripts/vendor/**/*.js`,`!${buildDir}/assets/scripts/vendor`], {read: false}), {ignorePath: '/docs', addRootSlash: false}))
+		return src(tempDir + 'index.html')
+				// All CSS files
+				.pipe(inject(src([buildDir + 'assets/styles/**/*.css'], {read: false}), {ignorePath: '/docs', addRootSlash: false}))
+				// All vendor js files inside head tag
+				.pipe(inject(src(buildDir + 'assets/scripts/vendor/*.js', {read: false}), {name: 'head', ignorePath: '/docs', addRootSlash: false}))
+				// All main js files before body close tag
+				.pipe(inject(src([buildDir + 'assets/scripts/*.js', `!${buildDir}/assets/scripts/vendor/**/*.js`,`!${buildDir}/assets/scripts/vendor`], {read: false}), {ignorePath: '/docs', addRootSlash: false}))
         .pipe(dest(buildDir));
 }
 

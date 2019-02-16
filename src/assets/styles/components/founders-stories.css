@@ -1,0 +1,153 @@
+.featured-talk {
+  @mixin at Small {
+    margin-bottom: -44px;
+  }
+}
+
+.hidden-series {
+
+  &__about {
+    margin-bottom: 5rem;
+
+    @mixin at Medium {
+      float: left;
+      width: 41%;
+      margin-top: 6rem;
+    }
+
+    @media(min-width: 530px) and (max-width: 930px) {
+      float: none;
+      width: auto;
+      margin-top: 0;
+    }
+
+  }
+
+  &__subtitle {
+    @mixin font-size 1.1;
+    font-weight: 500;
+    letter-spacing: .06em;
+  }
+
+  &__title {
+    @mixin font-size 3.6;
+    font-weight: 500;
+    margin: 1rem 0 1.2rem;
+    line-height: 1.05;
+  }
+
+  &__overview {
+    color: var(--grey-light);
+    font-weight: 500;
+    @mixin font-size 1.25;
+    letter-spacing: .02em;
+    margin-top: .8em;
+    line-height: 1.7;
+  }
+
+  .view-series-link {
+    @mixin font-size 1;
+    letter-spacing: .08em;
+    font-weight: normal;
+    padding-bottom: .2em;
+    border-bottom: 1px solid;
+  }
+
+  &__talk {
+    @mixin at Medium {
+      float: right;
+      width: calc(59% - 3rem);
+      margin-left: 3rem;
+    }
+
+    @media(min-width: 530px) and (max-width: 930px) {
+      float: none;
+      width: 100%;
+      max-width: 482px;
+      margin: 0 auto;
+    }
+
+    .founder {
+      position: relative;
+
+      &__quote {
+        background: linear-gradient(to top, white,hsla(0, 0%, 100%, .7));
+        border: 7px solid black;
+        padding: .7em .95em 1.1em;
+        transition: all 300ms ease;
+        position: relative; z-index: 1;
+        width: 100%;
+
+        @mixin at xSmall {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+        }
+
+        @mixin at Small {
+          background: unset;
+          float: right;
+          width: 226px;
+          height: 346px;
+          margin-top: 4.7rem;
+        }
+        
+        &:hover {
+          background-color: #fff;
+          box-shadow: 0 5px 18px hsla(0, 0%, 0%, .2);
+        }
+
+        q {
+          font-family: Buenard,serif;
+          @mixin font-size 1.5;
+          margin: 2rem 0 .5rem;
+          display: block;
+          line-height: 1.35;
+          letter-spacing: -.03em;
+          
+          @mixin at Small {
+            @mixin font-size 1.65;
+            margin: 3rem 0 2rem;
+          }
+        }
+      }
+      
+      h5:first-child {
+        font-size: 1rem;
+        letter-spacing: .1em;
+      }
+
+      &__details, h5 {
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: .07em;
+        margin: 0;
+      }
+
+      &__details {
+        @mixin font-size 1.1;
+        padding-top: 4.5em;
+
+        &.onion-brand {
+          background-size: 17px 17px;
+          background-position: 49.5% 18px;
+        }
+      }
+
+      &__image {
+        margin-inline: -20px;
+        transition: all 200ms ease;
+
+        @mixin at Small {
+          width: 360px;
+          position: absolute;
+          left: 0; top: 0;   
+          margin-inline: 0;
+        }
+
+        &:hover { opacity: .7 }
+      }
+    }
+  }
+}

@@ -2,57 +2,60 @@
 
 
 /* Settings – used with preprocessors and contain font, colors definitions, etc. */
-@import 'settings/fonts.css';
-@import 'settings/colors.css';
+@import 'settings/fonts';
+@import 'settings/colors';
 
 /* Tools – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers. */
 
 /* Functions */
 
 /* Mixins */
-@import 'tools/media-mixins.css';
-@import 'tools/center-mixins.css';
-@import 'tools/rem-fallback.css';
-@import 'tools/clearfix-mixins.css';
+@import 'tools/media-mixins';
+@import 'tools/center-mixins';
+@import 'tools/rem-fallback';
+@import 'tools/clearfix-mixins';
 
 
 /* Generic – reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS. */
-@import 'generic/box-model.css';
+@import 'generic/box-model';
 @import 'generic/scroll-behavior';
 
 /* Elements – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here. */
-@import 'elements/anchor.css';
-@import 'elements/img.css';
-@import 'elements/body.css';
-@import 'elements/html.css';
-@import 'elements/figure.css';
-@import 'elements/paragraph.css';
-
+@import 'elements/anchor';
+@import 'elements/img';
+@import 'elements/body';
+@import 'elements/html';
+@import 'elements/figure';
+@import 'elements/paragraph';
+@import 'elements/blockquote';
 
 /* Objects – class-based selectors which define undecorated design patterns, for example media object known from OOCSS */
-@import 'objects/grid.css';
-@import 'objects/button.css';
+@import 'objects/grid';
+@import 'objects/button';
 
 /* Components – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components */
-@import 'components/site-header.css';
-@import 'components/site-footer.css';
-@import 'components/onion-brand.css';
-@import 'components/searchbox.css';
-@import 'components/this-week.css';
-@import 'components/page-section.css';
-@import 'components/featured-women.css';
-@import 'components/stories.css';
-@import 'components/why-hidden-onions.css';
+@import 'components/site-header';
+@import 'components/site-footer';
+@import 'components/onion-brand';
+@import 'components/searchbox';
+@import 'components/this-week';
+@import 'components/founders-stories';
+@import 'components/page-section';
+@import 'components/featured-women';
+@import 'components/stories';
+@import 'components/why-hidden-onions';
+@import 'components/top-stories';
+@import 'components/editors-pick';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */
-@import 'utilities/floats.css';
-@import 'utilities/lists.css';
-@import 'utilities/relative-height.css';
-@import 'utilities/full-background.css';
-@import 'utilities/text-align.css';
-@import 'utilities/font-weight.css';
-@import 'utilities/font-style.css';
-@import 'utilities/screen-reader.css';
-@import 'utilities/text-transform.css';
-@import 'utilities/display.css';
-@import 'utilities/margin.css';
+@import 'utilities/floats';
+@import 'utilities/lists';
+@import 'utilities/relative-height';
+@import 'utilities/full-background';
+@import 'utilities/text-align';
+@import 'utilities/font-weight';
+@import 'utilities/font-style';
+@import 'utilities/screen-reader';
+@import 'utilities/text-transform';
+@import 'utilities/display';
+@import 'utilities/margin';

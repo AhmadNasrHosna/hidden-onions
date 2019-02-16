@@ -1,12 +1,7 @@
 /* Fonts */
-@import '../stylesheets/inter';
-@import '../stylesheets/sg';
-@import '../stylesheets/manrope';
 @import '../stylesheets/buenard';
-@import '../stylesheets/sumana';
-@import '../stylesheets/kollektif';
 @import '../stylesheets/bifocals';
-
+@import '../stylesheets/newtserif';
 
 
 :root {

@@ -1,143 +1,124 @@
+
 extends _index
 
+
 block change
-  .topics
-    ul
-      li
-        a(href="#") Dealing with rejection 
-      li
-        a(href="#") When in doubt 
-      li
-        a(href="#") Failing
-      li
-        a(href="#") Leading people
-      li
-        a(href="#") Pitching and fundraising 
-      li
-        a(href="#") Scaling and growth
-      li
-        a(href="#") Acquiring customers
-      li
-        a(href="#" class="to-uppercase") View more
+  section(class="page-section featured-talk")  
+    .container.container--narrow 
+      .hidden-series.clearfix
+        .hidden-series__about
+          h5.hidden-series__subtitle.to-uppercase.no-m-bottom Real talk from female founders
+          h2.hidden-series__title Introducing the hidden onion series
+          p.hidden-series__overview Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus mollitia neque id, eligendi est explicabo adipisci. Esse sint quibusdam optio quos reiciendis amet sapiente in iure provident tempora quidem quasi culpa laboriosam.
+          a(href="#" class="view-series-link to-uppercase") View hidden onion series
 
-  section(class="page-section featured-talk")   
-    .founder
-      .wrapper
-        .founder__overview
-          h5 Real talk from female founders
-          h2 Introducing the hidden onion series
-          p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus mollitia neque id, eligendi est explicabo adipisci. Esse sint quibusdam optio quos reiciendis amet sapiente in iure provident, tempora quidem fuga quasi culpa laboriosam delectus nulla assumenda hic voluptatum voluptatem natus.
-          a(href="#" class="to-uppercase") View hidden onion series
-        figure.founder__image
-          img(src="", alt="Founder")
+        .hidden-series__talk
+          .founder.clearfix
+            blockquote.founder__quote.align-center
+              h5.to-uppercase Featured
+              q My hidden onion moment was when I was overworking and neglecting other areas of my life. 15 hour, 7 days a week was not healthy or sustainable. I learnt to work smarter not just harder.
+              h5.founder__details.onion-brand.to-uppercase 
+                span Chrissele Lim
+                br
+                span <strong>The Chrissele Factor</strong>
+            figure.founder__image
+              a(href="#")
+                img(src="assets/images/chriselle.jpg", alt="Founder")
+          
+  section(class="page-section founders-stories")
+    .container.container--narrow 
+      h2.page-section__customed-title.onion-brand Interviews &amp; stories from female founders 
+        a(href="#" class="to-uppercase") View All
+      .founders-stories__inner.clearfix
 
-      blockquote.founder__quote
-        .blockquote-wrapper
-          p.to-uppercase Featured
-          q My hidden onion story is when we were starting out we kind of made things up as we were going along. I was doing everything from shipping, sourcing, ordering and updating the website. It was overwhelming 14 hour, 7 days a week and I was realy burnt out. Foruanately Chantelle mu first employee and now our CMO started putting systems in place and that really saved my mental health and ultimately the business.
-          h5.onion-brand.to-uppercase 
-            span.font-weight-400 Chrissele Lim
-            br
-            span The Chrissele Factor
-        
-             
-
-
-  section(class="page-section top-stories")
-    .container
-      .wrapper
-        .interviews
-          h2.onion-brand Interviews &amp; stories from female founders 
-            a(href="#" class="to-uppercase") View All
-          .story
-              figure.story__image
-                a(href="#") 
-                  img(src="", alt="Story")
-              h3.story__title 
-                a(href="#") Taking a business from $0 to $5million in revenue
-              p.story__subtitle Interview with Bobbi Brown founder of justBOBBI
-          .story
-              figure.story__image
-                a(href="#") 
-                  img(src="", alt="Story")
-              h3.story__title 
-                a(href="#") How to believe in yourself after multiple failures and near bankruptcy
-              p.story__subtitle Kathryn Minshew, CEO and co-founder of The MuseCourtesy
-          .story
-              figure.story__image
-                a(href="#") 
-                  img(src="", alt="Story")
-              h3.story__title 
-                a(href="#") Leveraging influencers and social media for hyber growth with ecommerce brands
-              p.story__subtitle Interview with Tessa Thomposn founder of fitMats
+        .stories.clearfix
+          .stories__inner
+            .story
+              .story__inner
+                figure.story__image
+                  a(href="#") 
+                    img(src="assets/images/featimg-04.jpg", alt="Story")
+                h3.story__title 
+                  a(href="#") Taking a business from $0 to $5million in revenue
+                p.story__subtitle Interview with Bobbi Brown founder of justBOBBI
+            .story
+              .story__inner
+                figure.story__image
+                  a(href="#") 
+                    img(src="assets/images/featimg-05.jpg", alt="Story")
+                h3.story__title 
+                  a(href="#") How to believe in yourself after multiple failures and near bankruptcy
+                p.story__subtitle Kathryn Minshew, CEO &amp; co-founder of The MuseCourtesy
+            .story
+              .story__inner
+                figure.story__image
+                  a(href="#") 
+                    img(src="assets/images/featimg-03.jpg", alt="Story")
+                h3.story__title 
+                  a(href="#") Leveraging influencers and social media for hyber growth with ecommerce brands
+                p.story__subtitle Interview with Tessa Thomposn founder of fitMats
         
         .top-stories
-          h2 Top Stories
-          ul
-            li.sorty
+          h2 Top stories
+          ul.top-stories__inner.list.list--no-bullets.clearfix
+            li.story
               figure.story__image
                 a(href="#") 
-                  img(src="", alt="Story")
+                  img(src="assets/images/img-1.jpg", alt="Story")
               h3.story__title
                 a(href="#") Taking a business from $0 to $5 million in revenue
               p.story__subtitle Interview with Chantell Smith founder of The Hard Rates
-            li.sorty
+            li.story
               figure.story__image
                 a(href="#") 
-                  img(src="", alt="Story")
+                  img(src="assets/images/img-3.png", alt="Story")
               h3.story__title
                 a(href="#") What to do when toyr deep ing debt and unsure about your business trajectory and profitability
               p.story__subtitle Interview with Bobbi Brown founder of justBOBBI
-            li.sorty
+            li.story
               figure.story__image
                 a(href="#") 
-                  img(src="", alt="Story")
+                  img(src="assets/images/latest-3.png", alt="Story")
               h3.story__title
                 a(href="#") Taking a business from $0 to $5 million in revenue
               p.story__subtitle Interview with Tessa Thomposn
-            li.sorty
+            li.story
               figure.story__image
                 a(href="#") 
-                  img(src="", alt="Story")
+                  img(src="assets/images/latest-2.png", alt="Story")
               h3.story__title
                 a(href="#") Should you use credit cards as a line of credit?
               p.story__subtitle Advice from Christine &amp; Chantell
 
-      .wrapper      
-        .hero-story
-            figure.hero-story__image
-              img(src="", alt="Story")
-            header.hero-story__header
-                h4.hero-story__label.onion-brand Editors Pick
-                h2.hero-story__title  
-                  a(href="#") How to build a brand with raving fans. A masterclass from the founders of Smiggle.
-                p.hero-story__author.to-uppercase By: Jane Lu
-            section.hero-story__overview
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut vitae aliquid beatae perspiciatis eaque architecto facilis! Ipsa nobis quae illum voluptates sit sapiente id ab? Cumque magnam aliquam id dignissimos.
-
-        .editors-pick
-          .story
-            figure.hero-story__image
-              img(src="", alt="Story")
-            h4.hero-story__label.onion-brand Editors Pick
-            h2.hero-story__title  
-              a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-            a(href="#" class="to-uppercase") View Story
-
-          .story
-            figure.hero-story__image
-              img(src="", alt="Story")
-            h4.hero-story__label.onion-brand Editors Pick
-            h2.hero-story__title  
-              a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-            a(href="#" class="to-uppercase") View Story
-          
-          .story.founder-quote
-            figure.hero-story__image
-              img(src="", alt="Story")
-            h4.hero-story__label.onion-brand Founder quote
-            h2.hero-story__title  
-              a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-            a(href="#" class="to-uppercase") View Interview
-
-              
+block editors-pick     
+  block config
+    - var heroImg = "assets/images/img-2.jpg";
+  include components/_editors-pick      
+  block other
+    .relative-stories
+      .story
+        figure.story__thumb
+          img(src="assets/images/latest-6.png", alt="Story")
+        .story__overview
+          h4.story__label.no-m-top.onion-brand Editors Pick
+          h2.story__title  
+            a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
+          a(href="#" class="story__view-story-link") View Story
+      .story
+        figure.story__thumb
+          img(src="assets/images/latest-7.png", alt="Story")
+        .story__overview
+          h4.story__label.no-m-top.onion-brand Editors Pick
+          h2.story__title  
+            a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
+          a(href="#" class="story__view-story-link") View Story
+      
+      blockquote.founder-quote
+        figure.story__image
+          img(src="assets/images/latest-8.png", alt="Story")
+        .story__overview  
+          h4.story__label.no-m-top.onion-brand Founder quote
+          h2.story__title  
+            a(href="#")
+              q True success has been the result of overcoming so many failures and still giving it another shot.
+          a(href="#" class="story__view-story-link") View Interview
