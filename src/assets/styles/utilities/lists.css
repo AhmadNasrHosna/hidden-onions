@@ -54,5 +54,9 @@
     }
   }
 
+  &--no-inline-gutters {
+    font-size: 0; /* Remove spaces between li items */
+  }
+
 }
 

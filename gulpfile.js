@@ -82,7 +82,7 @@ const { src, dest, task, watch, series, parallel } = require("gulp"),
         port: 9000,
 		server: {
             baseDir: [tempDir, srcDir] 
-            // we add 'src' because we want to watch for other assets from it.
+            // we add 'src' to watch for other assets from it.
                 // try to remove './src' then all images will be disappear from the server
         }
 	});
@@ -470,7 +470,7 @@ task("build", series(
     function (done) {
         browserSync.init({
             notify: false,
-            port: 7000,
+            port: 9000,
             server: {
                 baseDir: buildDir
             }

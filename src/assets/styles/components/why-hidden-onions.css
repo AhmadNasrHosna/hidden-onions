@@ -11,13 +11,17 @@
 
   .join-newsletter-link {
     letter-spacing: .03em;
-    font-size: 1.8rem;
+    @mixin font-size 1.6;
     font-weight: 600;
     background: #000000;
     color: #ffffff;
     padding: .65em 1em .6em;
     border-radius: 2px;
     box-shadow: 0 2px 7px rgba(0,0,0,.25);
+
+    @media (min-width: 324px) {
+       @mixin font-size 1.8;
+    }
   }
 }
 

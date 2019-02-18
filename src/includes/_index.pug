@@ -85,7 +85,7 @@ main.site-content
 
 
   section(class="stories")
-    div(class="featured-stories page-section clearfix "  + currentPage)
+    div(class="page-section featured-stories clearfix "  + currentPage)
       .container.container--narrow
         .featured-stories__inner
           block editors-pick
@@ -117,7 +117,7 @@ main.site-content
                         a(href="#") Taking a business from $0 to $5 million in revenue
                     p.story__description Interview with Tessa Thompson founder of Rarebit.
 
-    .latest-stories.page-section
+    div(class="page-section latest-stories "  + currentPage)
       .container.container--narrow
         h2.page-section__title.no-m-top The Latest
         ul(class="list list--no-bullets clearfix")

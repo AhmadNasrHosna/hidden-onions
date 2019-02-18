@@ -1,0 +1,665 @@
+.topics {
+
+  &__filter {
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-light);
+    
+    h2 {
+      font-weight: 500;
+      margin-bottom: 3rem;
+      line-height: 1.4; 
+      @mixin at Small { line-height: unset }
+
+    }
+    
+    .filter-list {
+
+      @mixin at xSmall {
+        li {
+          width: 50%;
+          float: left;
+  
+          &:nth-child(even) a { margin-right: 1.3rem }
+        }
+      }
+
+      .show-all-button {
+        @mixin at Medium { display: inline-block }
+      }
+
+      a {
+        display: block;
+        height: 3.2rem;
+        @mixin line-height 3.1;
+        border: 1px solid hsl(0, 0%, 69%);
+        text-align: center;
+        padding-inline: 1.6em;
+        @mixin font-size .95;
+        letter-spacing: .1em;
+        font-weight: 500;
+        transition: all 200ms ease;
+        border-radius: 2px;
+        opacity: .4;
+        margin-bottom: 1.4rem;
+        margin-right: 1.3rem;
+        /* text-transform: uppercase; */
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        @mixin at Medium {
+          height: 3.6rem;
+          @mixin line-height 3.5;
+          @mixin font-size 1.1;
+          letter-spacing: .08em;
+        }
+
+        &:hover {
+          background-color: #000000;
+          color: #ffffff;
+          border-color: transparent;
+          box-shadow: 0 2px 7px hsla(0, 0%, 0%, .25);
+          opacity: 1;
+          transform: translateY(-3px);
+        }
+
+        &.active {opacity: 1;}
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 2.7em;
+  }
+}
+
+
+.cover-stories {
+
+  @media (min-width: 944px) { 
+    float: left;
+    width: 57%;
+  }
+
+  .filtered-articles-status {
+    p {
+      font-family: "Newt Serif", serif;
+      font-style: italic;
+
+      span:first-child::after {
+        content: " / "
+      }
+    }
+  }
+
+  .story {
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 2.3em;
+
+    &__overview,
+    &__image {
+
+      @mixin at Small {
+        float: left;
+      }
+    }
+
+    &__overview {
+
+      @mixin at Small {
+        width: calc(50% - 2rem);
+        margin-right: 2rem;
+      }
+
+      border-top: 1px solid #ccc;
+      margin-bottom: 4rem;
+
+      @mixin at Small {
+        margin-bottom: 0;
+      }
+    }
+
+    &__topic-label {
+      padding-left: 1.5em;
+      font-family: "Newt Serif", serif;
+      font-style: italic;
+      font-weight: 500;
+      @mixin font-size 1.7;
+
+      span:first-child::after {
+        content: "";
+        display: inline-block;
+        height: 14px;
+        width: 1px;
+        background: #b3b3b3;
+        position: relative;
+        top: 2px;
+        margin: 0 1rem;
+      }
+
+      &.onion-brand {
+        background-size: 17px 17px;
+        background-position: 0 3px;
+      }
+    }
+
+    &__title {
+      @mixin at Small { max-width: 24rem }
+
+      line-height: 1.2;
+      @mixin font-size 2.3;
+      letter-spacing: .03em;
+      margin-top: 2rem; 
+
+      @mixin at Medium {
+        margin-top: 4rem;
+      }
+    }
+
+    &__subtitle {
+      font-weight: 500;
+      color: #b3b3b3;
+
+      &::before {
+        content: " - ";
+        color: inherit;
+      }
+    }
+
+    &__view-story-link {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      @mixin font-size 1;
+      font-weight: 500;
+      position: relative;
+      border-bottom: 1px solid;
+    }
+    
+    &__image {
+      transition: all 200ms ease;
+      @mixin at Small {
+        width: 50%;
+      }
+
+    }
+
+    &:hover {
+      .story__image {
+        opacity: .8;
+      }
+    }
+  }
+
+  
+}
+
+
+.popular-resources {
+  padding-top: 2.3em;
+  margin-bottom: 7rem;
+  @mixin at Medium { margin-bottom: 3.4rem }
+
+  @media (min-width: 944px) {
+    width: calc(43% - 9.3rem);
+    float: right;
+    margin-left: 9.3rem;
+    margin-bottom: 0; 
+    padding-top: 0;
+  }
+
+  @media (min-width: 768px) and (max-width: 943px) {
+    > ul {
+      margin-right: -2rem;
+    }
+  }
+
+  .story {
+
+    @media (min-width: 768px) and (max-width: 943px) {
+      width: calc(33.3333% - 2rem);
+      float: left;
+      margin-right: 2rem;
+    }
+
+    border: 7px solid black;
+
+    &:not(:last-child) {
+      margin-bottom: 3.6rem;
+    }
+
+    a {
+      display: block;
+      padding: .6em 2.5em .8em;
+      transition: all 200ms ease;
+
+      @mixin at Medium { min-height: 190px }
+
+      @media (min-width: 768px) and (max-width: 943px) {
+        padding: .6em 1em .8em;
+        min-height: 200px;
+      }
+
+      &.onion-brand {
+        background-size: 17px 17px;
+        background-position: 50% 90%;
+      }
+
+      &:hover {
+        background-color: hsl(43, 27%, 80%);
+        box-shadow: 0 5px 18px hsla(0, 0%, 0%, .8);
+      }
+    }
+
+    &__subtitle {
+      text-transform: uppercase;
+      @mixin font-size 1.1;
+      font-weight: 500;
+      letter-spacing: .07em;
+      margin: 0;
+    }
+
+    &__title {
+      @mixin font-size 1.95;
+      line-height: 1.25;
+      font-weight: 500;
+      font-family: "Buenard" ,serif;
+      margin: 1.75rem 0;
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+
+    &__topic-label {
+      font-family: "Newt Serif", serif;
+      font-weight: 500;
+      font-style: italic;
+      margin-bottom: 0;
+      display: inline-block;
+      padding-left: 1.8em;
+      margin-left: -.9em;
+
+      &.onion-brand {
+        background-size: 17px 17px;
+        background-position: 4px 3px;
+        mix-blend-mode: darken;
+      }
+    }
+
+  }
+
+  @supports (display: flex) {
+    .story {
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      &__topic-label {
+        margin-inline: auto;
+      }
+    }
+  }
+
+}
+
+.resources-topics {
+
+  @media (min-width: 944px) {
+    width: 57%;
+    float: left;
+  }
+
+  .page-section {
+    padding-block: 50px;
+
+    &__title {
+      letter-spacing: -.02em;
+      padding-left: .9em;
+      margin-bottom: 2.9rem;
+
+      &.onion-brand {
+        background-size: 22px 22px;
+        background-position: 0 13px;
+      }
+    }
+
+    &:first-child { border-bottom: 1px solid var(--border-light) }
+    &:last-child  { padding-bottom: 5.2em }
+  }
+
+  
+  
+
+  .topic-articles {
+    padding-inline-start: 2.25em;
+
+    ul + button { margin-block-start: 3rem } /* Add margin top to a button comes after any ul */
+
+    .article {
+      padding: 1px 1.4em .5em;
+      transition: all 200ms ease;
+      margin-inline-start: -2rem;
+
+      &__title {
+        @mixin font-size 1.7;
+        letter-spacing: .01em;
+        line-height: 1.45;
+        font-weight: 500;
+        margin-bottom: .3rem;
+
+        a {
+          transition: all 200ms ease;
+          border-bottom: 0 solid transparent;
+        }
+      }
+
+      &__overview {
+        font-family: "Newt Serif",serif;
+        @mixin font-size 1.4;
+        letter-spacing: .01em;
+        line-height: 1.45;
+        margin-bottom: .3rem;
+
+        @media (min-width: 944px) { max-width: 45rem }
+      }
+      
+      &__author {
+        letter-spacing: .1em;
+        @mixin font-size .95;
+        display: inline-block;
+        padding-bottom: .15em;
+        font-weight: 600;
+        color: #333;
+      }
+
+      &:hover {
+        background: var(--bg-light);
+        box-shadow: 0 0 0 7px black, 0 5px 18px hsla(0, 0%, 0%, .8);
+        
+        .article__title a { border-bottom: 2px solid #dad2be }
+      }
+    }
+  }
+
+}
+
+
+
+.conferences {
+  &__inner {
+    border-block: 1px solid var(--border-light);
+
+    &.page-section { 
+      padding-block-start: 70px;
+      padding-block-end: 20px;
+    }
+  }
+
+  .conference {
+    &__image,
+    &__details {
+      width: 50%;
+      float: left;
+
+      img { box-shadow: 0 2px 6px rgba(0,0,0,.1) }
+    }
+
+    &__image {
+      transition: all 200ms ease;
+
+      figcaption {
+        color: var(--grey-light);
+        @mixin font-size 1.1;
+        letter-spacing: .02em;
+        margin-top: 1.2rem;
+      }
+
+      &:hover {
+        opacity: .85;
+      }
+    }
+
+    &__details {
+      padding: 0 1em 0 2.8em;
+      margin-top: 4.4rem;
+
+      h4 {
+        font-family: "Newt Serif", serif;
+        font-weight: 500;
+        font-style: italic;
+        padding-left: 1.4em;
+        @mixin font-size 1.95;
+        letter-spacing: -.01em;
+
+        &.onion-brand {
+          background-size: 18px 18px;
+          background-position: 0 5px;
+        }
+      }
+
+    }
+
+    &__title {
+      @mixin font-size 3;
+      line-height: 1.2;
+      margin: 2.1rem 0 1.6rem;
+
+      a {
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          background-color: hsl(43, 27%, 80%);
+          width: 0;
+          height: 2px;
+          position: absolute;
+          bottom: -4px;
+          right: 0;
+          opacity: .5;
+          transition: all 300ms ease;
+        }
+      }
+
+      &:hover {
+        a::after {
+          width: 100%;
+          left: 0;
+          opacity: 1;
+        }
+      }
+    }
+
+    &__presentation {
+      @mixin font-size .95;
+      letter-spacing: .08em;
+      margin-bottom: 2.5rem;
+    }
+
+    &__overview{
+      color: var(--grey-light);
+      @mixin font-size 1.25;
+      letter-spacing: .02em;
+      margin-top: .8em;
+      line-height: 1.7;
+      max-width: 37rem;
+    }
+
+  }
+
+  &__pagination {
+    margin-top: 3rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      background: hsl(43, 27%, 80%);
+      position: absolute;
+      left: 50%;
+      margin-left: -26px;
+      top: -9px;
+      opacity: 0;
+      transform: scale(0);
+      transition: all 300ms ease;
+    }
+
+    .previous, .next { /* buttons */
+      --move: 2px;
+      @mixin button-reset;
+      position: relative;
+      width: 33px;
+      height: 28px;
+      outline: 0;
+      transition: all 300ms ease;
+
+      &::before, &::after {
+        content: "";
+        display: block;
+        background: black;
+        position: absolute;
+      }
+
+      &::before {
+        width: inherit;
+        height: 1px;
+      }
+
+      &::after {
+        background: transparent;
+        width: 7px; height: 7px;
+      }
+    }
+
+    .previous {
+      &::after {
+        border-left: 1px solid #000;
+        border-top: 1px solid #000;
+        transform: rotate(-45deg) translate(3px,-1px);;
+      }
+
+      &:hover { transform: translateX(-6px) }
+      &:active { right: var(--move) }
+    }
+
+    .next {
+      &::after {
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        transform:  rotate(-45deg) translate(21px,17px);
+      }
+
+      &:hover { transform: translateX(6px) }
+      &:active { left: var(--move) }
+    }
+
+
+    .items {
+      font-family: "Newt Serif", serif;
+      font-style: italic;
+      font-size: 18px;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 1.7rem;
+      user-select: none;
+      -webkit-user-drag: none;
+
+      &__current-item,
+      &__length { display: inline-block }
+
+      &__current-item {
+        position: relative;
+        margin-right: .3rem;
+        
+        &::after {
+          content: "/";
+          font-size: 24px;
+          position: absolute;
+          left: 7px; top: -3px;
+        }
+      }
+
+      &__length {
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+
+  &__inner:hover {
+    .conferences__pagination::before {
+      opacity: 1;
+      transform: scale(1)
+    }
+  }
+}
+
+
+.featured-resources {
+  margin-bottom: -3.8rem;
+
+  ul:first-of-type {
+    margin-top: 7.5rem;
+  }
+
+  .feature {
+    margin-bottom: 4.8rem;
+
+    @mixin at xSmall {
+      display: block;
+    }
+
+    @mixin at Small {
+      width: 33.333%;
+      float: left;
+      min-height: 190px;
+
+      margin-bottom: 3.8rem;
+    }
+
+    @mixin at Medium {
+      width: 25%;
+    }
+
+    &__thumb {
+      width: 180px;
+      height: 180px;
+
+      @mixin at Small {
+        width: 125px;
+        height: 125px;
+      }
+
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,.1);
+      transition: all 200ms ease;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__title {
+      @mixin font-size 1.7;
+      letter-spacing: .01em;
+      max-width: 17rem;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      line-height: 1.4;
+      margin-top: 1.8rem;
+    }
+
+    &:hover {
+      .feature__thumb {
+        opacity: .8;
+      }
+    }
+  }
+
+}

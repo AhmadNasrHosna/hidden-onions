@@ -2,14 +2,15 @@
   display: inline-block;
   height: 5rem;
   @mixin line-height 4.8;
-  padding: 0 2em;
+  padding-inline: 2.5em;
   border: 1px solid;
   font-family: inherit;
   cursor: pointer;
   text-align: center;
   white-space: nowrap;
   border-radius: 2px;
-  transition: all 200ms ease;
+  /* transition: all 200ms ease; */
+  background: transparent;
 
   &:focus {
     outline: none;

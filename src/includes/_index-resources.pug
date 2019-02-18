@@ -1,216 +1,252 @@
-.topics
-  .container
-    .topics__filter
-        h2 I'am looking for business resources related to: 
-        ul
-          li
-            a(href="#" class="to-uppercase") Showing All
-          li
-            a(href="#" class="to-uppercase") Dealing with rejection 
-          li
-            a(href="#" class="to-uppercase") When in doubt 
-          li
-            a(href="#" class="to-uppercase") Failing
-          li
-            a(href="#" class="to-uppercase") Leading people
-          li
-            a(href="#" class="to-uppercase") Pitching and fundraising 
-          li
-            a(href="#" class="to-uppercase") Scaling and growth
-          li
-            a(href="#" class="to-uppercase") Acquiring customers
-          li
-            a(href="#" class="to-uppercase") Shipping
-          li
-            a(href="#" class="to-uppercase") Order Fulfillment
-          li
-            a(href="#" class="to-uppercase") Hiring And Firing
-          li
-            a(href="#" class="to-uppercase") Finfing Supliers
-          li
-            a(href="#" class="to-uppercase") Pivoting 
+main.site-content
+  include components/_breadcrumbs
 
-    .topics__content
-      .cover-stories
-        .filtered-articles-status
-          p Showing 
-            span.filtered-articles-length 21 
-            span.all-articles-length 52 
-            | articles
-        .story 
-          .story__overview
-            h4.story__topic-label.onion-brand When in doubt
-              span Cover Stories
-            h2.story__title InVogue run by Tessa Thompson
-            p.story__subtitle She shares how she shuts down naysayers
-            a(href="#" class="to-uppercase") View Story
-          figure.story__image
-            img(src="", alt="Story")
+  section.topics
+    .container.container--narrow
+      .topics__filter.clearfix
+          h2.align-center I'm looking for business resources related to: 
+          ul.filter-list.list.list--inline.list--no-bullets.list--no-inline-gutters
+            a(href="#" class="show-all-button") Showing All
 
-      .popular-resources
-        ul
-          li.story
-            a(href='#')
-              h5.story__subtitle.to-uppercase Past hidden onions
-              h2.story__title Hitting rock bottom with cash flow and how to turn it round
-              h4.story__topic-label.onion-brand Faling
-          li.story
-            a(href='#')
-              h5.story__subtitle.to-uppercase Past hidden onions
-              h2.story__title The ultimate checklist to make sure you're confident as a founder
-              h4.story__topic-label.onion-brand When in doubt
-          li.story
-            a(href='#')
-              h5.story__subtitle.to-uppercase Past hidden onions
-              h2.story__title How to build a great culture and hire A-players
-              h4.story__topic-label.onion-brand Hiring and Firing      
-        
-      .resources-topics
-        .when-in-doubt
-          h2.onion-brand When in doubt
-          ul.topic__articles 
-            li.article 
-              h3.article__title What to do when your're ushure about your business plan
-              p.article__overview Body description goes here to describe content of the post. 
-              p.article__author.to-uppercase By: Jane Lue
-            li.article 
-              h3.article__title How to become more confident as a founder
-              p.article__overview Body description goes here to describe content of the post. 
-              p.article__author.to-uppercase By: Natasha Gomez
-            li.article 
-              h3.article__title 5 steps to a positive mindset
-              p.article__overview Body description goes here to describe content of the post. 
-              p.article__author.to-uppercase By: Jane Lue
-            li.article 
-              h3.article__title What to do when your're ushure about your business plan
-              p.article__overview Body description goes here to describe content of the post. 
-              p.article__author.to-uppercase By: Diya Varma
-            li.article 
-              h3.article__title What to do when your're ushure about your business plan
-              p.article__overview Body description goes here to describe content of the post. 
-              p.article__author.to-uppercase By: Jane Lue
+            li
+              a(href="#" class="active") Dealing with rejection 
+            li
+              a(href="#" class="active") When in doubt 
+            li
+              a(href="#") Failing
+            li
+              a(href="#") Leading people
+            li
+              a(href="#") Pitching and fundraising 
+            li
+              a(href="#") Scaling and growth
+            li
+              a(href="#") Acquiring customers
+            li
+              a(href="#") Shipping
+            li
+              a(href="#") Order Fulfillment
+            li
+              a(href="#") Hiring And Firing
+            li
+              a(href="#") Finfing Supliers
+            li
+              a(href="#") Pivoting 
 
-        .rejection 
-          h2.onion-brand Dealing with Rejection
-          ul.topic__articles 
-            li.article 
-              h3.article__title How to get over rejection and succeed
-              p.article__overview Body description goes here to describe content of the post. 
-              p.article__author.to-uppercase By: Jane Lue
-            li.article 
-              h3.article__title What to do when your're ushure about your business plan
-              p.article__overview Body description goes here to describe content of the post. 
-              p.article__author.to-uppercase By: Jane Lue
-            li.article 
-              h3.article__title How to become more confident as a founder
-              p.article__overview Body description goes here to describe content of the post. 
-              p.article__author.to-uppercase By: Natasha Gomez
-            li.article 
-              h3.article__title 5 steps to a positive mindset
-              p.article__overview Body description goes here to describe content of the post. 
-              p.article__author.to-uppercase By: Jane Lue
-            li.article 
-              h3.article__title What to do when your're ushure about your business plan
-              p.article__overview Body description goes here to describe content of the post. 
-              p.article__author.to-uppercase By: Diya Varma
-            li.article 
-              h3.article__title What to do when your're ushure about your business plan
-              p.article__overview Body description goes here to describe content of the post. 
-              p.article__author.to-uppercase By: Jane Lue
-      
-      button.button.button-outline Load more resources
+      .topics__content.clearfix
 
-sections.page-section.conferences
-  .container
-    .conferences__wrapper
-      .conference
-        figure.conference__image
-          img(src="", alt="Conference")
-          figcaption Photo from the NYC event
-        .conference__detailes
-          h4.onion-brand Conferences
-          h2.conference__title Female Founders Conference
-          h5.conference__presentation.to-uppercase Presantor by: Y compinator
-          p.conference__overview Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, commodi reiciendis repellat, autem exercitationem sunt molestias, laudantium animi minus consequuntur nihil impedit ab harum eius eligendi velit iste eos sed. Architecto ipsum neque odio velit ex? Eum in aut commodi.
-      .conference
-        figure.conference__image
-          img(src="", alt="Conference")
-          figcaption Photo from the NYC event
-        .conference__detailes
-          h4.onion-brand Conferences
-          h2.conference__title Female Founders Conference
-          h5.conference__presentation.to-uppercase Presantor by: Y compinator
-        p.conference__overview Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, commodi reiciendis repellat, autem exercitationem sunt molestias, laudantium animi minus consequuntur nihil impedit ab harum eius eligendi velit iste eos sed. Architecto ipsum neque odio velit ex? Eum in aut commodi.
-      .conference
-        figure.conference__image
-          img(src="", alt="Conference")
-          figcaption Photo from the NYC event
-        .conference__detailes
-          h4.onion-brand Conferences
-          h2.conference__title Female Founders Conference
-          h5.conference__presentation.to-uppercase Presantor by: Y compinator
-          p.conference__overview Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, commodi reiciendis repellat, autem exercitationem sunt molestias, laudantium animi minus consequuntur nihil impedit ab harum eius eligendi velit iste eos sed. Architecto ipsum neque odio velit ex? Eum in aut commodi.
-      .conference
-        figure.conference__image
-          img(src="", alt="Conference")
-          figcaption Photo from the NYC event
-        .conference__detailes
-          h4.onion-brand Conferences
-          h2.conference__title Female Founders Conference
-          h5.conference__presentation.to-uppercase Presantor by: Y compinator
-          p.conference__overview Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, commodi reiciendis repellat, autem exercitationem sunt molestias, laudantium animi minus consequuntur nihil impedit ab harum eius eligendi velit iste eos sed. Architecto ipsum neque odio velit ex? Eum in aut commodi.
-     
-    .section__pagination
-      button.previous
-      .items
-        //- index of the current conference
-        .items__current-item 1
-        //- conferences length
-        .items__length 4
-      button.next
+        .cover-stories.clearfix
+          .filtered-articles-status
+            p Showing 
+              span.filtered-articles-length 21
+              span.all-articles-length 52 
+              | articles
+          .story.clearfix
+            .story__overview
+              h4.story__topic-label.onion-brand 
+                a(href="#") 
+                  span When in doubt
+                  span Cover Stories
+              h2.story__title 
+                a(href="#") InVogue run by Tessa Thompson
+                span.story__subtitle She shares how she shuts down naysayers
+              a(href="#" class="story__view-story-link to-uppercase") View Story
+            figure.story__image
+              a(href="#")
+                img(src="assets/images/img-3.jpg", alt="Story")
 
-
-sections.page-section.featured-resources
-  .container
-    h2.section-title Featured Business Resources
-      ul
-        li.featured
-          a(href="#")
-            figure.featured__thumb 
-              img(src="#", alt="Thumb")
-            h3.featured__title Conferences
-        li.featured
-          a(href="#")
-            figure.featured__thumb 
-              img(src="#", alt="Thumb")
-            h3.featured__title Workshops 
-        li.featured
-          a(href="#")
-            figure.featured__thumb 
-              img(src="#", alt="Thumb")
-            h3.featured__title Networking Events 
-        li.featured
-          a(href="#")
-            figure.featured__thumb 
-              img(src="#", alt="Thumb")
-            h3.featured__title VC / Angel lists by Industry 
-        li.featured
-          a(href="#")
-            figure.featured__thumb 
-              img(src="#", alt="Thumb")
-            h3.featured__title Program + Incubator New and deadlines
-        li.featured
-          a(href="#")
-            figure.featured__thumb 
-              img(src="#", alt="Thumb")
-            h3.featured__title Network of Mentors
-              
-
-
-block why-hidden-onions      
-  block config
-    - var sectionTitle = "Join 23,000 founders";
-  include components/_why-hidden-onions            
+        .popular-resources
+          ul.list.list--no-bullets.clearfix
+            li.story.align-center
+              a(href='#')
+                h5.story__subtitle.to-uppercase Past hidden onions
+                h2.story__title Hitting rock bottom with cash flow and how to turn it round
+                h4.story__topic-label.onion-brand Faling
+            li.story.align-center
+              a(href='#')
+                h5.story__subtitle.to-uppercase Past hidden onions
+                h2.story__title The ultimate checklist to make sure you're confident as a founder
+                h4.story__topic-label.onion-brand When in doubt
+            li.story.align-center
+              a(href='#')
+                h5.story__subtitle.to-uppercase Past hidden onions
+                h2.story__title How to build a great culture and hire A-players
+                h4.story__topic-label.onion-brand Hiring and Firing      
           
-        
-        
+        .resources-topics
+          .when-in-doubt.page-section
+            h2.page-section__title.no-m-top.onion-brand When in doubt
+            .topic-articles
+              ul.list.list--no-bullets
+                li.article 
+                  h3.article__title 
+                    a(href="#") What to do when your're ushure about your business plan
+                  p.article__overview Body description goes here to describe content of the post. Body description goes here to describe content of the post. 
+                  p.article__author.to-uppercase By: Jane Lue
+                li.article 
+                  h3.article__title 
+                    a(href="#") How to become more confident as a founder
+                  p.article__overview Body description goes here to describe content of the post. Body description goes here to describe content of the post. 
+                  p.article__author.to-uppercase By: Natasha Gomez
+                li.article 
+                  h3.article__title 
+                    a(href="#")  5 steps to a positive mindset
+                  p.article__overview Body description goes here to describe content of the post. Body description goes here to describe content of the post. 
+                  p.article__author.to-uppercase By: Jane Lue
+                li.article 
+                  h3.article__title 
+                    a(href="#")  What to do when your're ushure about your business plan
+                  p.article__overview Body description goes here to describe content of the post. Body description goes here to describe content of the post. 
+                  p.article__author.to-uppercase By: Diya Varma
+                li.article 
+                  h3.article__title 
+                    a(href="#") What to do when your're ushure about your business plan
+                  p.article__overview Body description goes here to describe content of the post. Body description goes here to describe content of the post. 
+                  p.article__author.to-uppercase By: Jane Lue
+
+          .rejection.page-section
+            h2.page-section__title.no-m-top.onion-brand Dealing with Rejection
+            .topic-articles
+              ul.list.list--no-bullets
+                li.article 
+                  h3.article__title 
+                    a(href="#") How to get over rejection and succeed
+                  p.article__overview Body description goes here to describe content of the post. Body description goes here to describe content of the post. 
+                  p.article__author.to-uppercase By: Jane Lue
+                li.article 
+                  h3.article__title 
+                    a(href="#") What to do when your're ushure about your business plan
+                  p.article__overview Body description goes here to describe content of the post. Body description goes here to describe content of the post. 
+                  p.article__author.to-uppercase By: Jane Lue
+                li.article 
+                  h3.article__title 
+                    a(href="#") How to become more confident as a founder
+                  p.article__overview Body description goes here to describe content of the post. Body description goes here to describe content of the post. 
+                  p.article__author.to-uppercase By: Natasha Gomez
+                li.article 
+                  h3.article__title 
+                    a(href="#") 5 steps to a positive mindset
+                  p.article__overview Body description goes here to describe content of the post. Body description goes here to describe content of the post. 
+                  p.article__author.to-uppercase By: Jane Lue
+                li.article 
+                  h3.article__title 
+                    a(href="#") What to do when your're ushure about your business plan
+                  p.article__overview Body description goes here to describe content of the post. Body description goes here to describe content of the post. 
+                  p.article__author.to-uppercase By: Diya Varma
+                li.article 
+                  h3.article__title 
+                    a(href="#") What to do when your're ushure about your business plan
+                  p.article__overview Body description goes here to describe content of the post. Body description goes here to describe content of the post. 
+                  p.article__author.to-uppercase By: Jane Lue
+              button.load-more-button.button.button-outline.font-weight-600.generic-hover--black Load more resources
+
+  section.conferences
+    .container.container--narrow
+      .conferences__inner.page-section
+        .conference.clearfix
+          figure.conference__image
+            a(href="#")
+            img(src="assets/images/img-2.jpg", alt="Conference")
+            figcaption Photo from the NYC event
+          .conference__details
+            h4.no-m-block.onion-brand Conferences
+            h2.conference__title.no-m-block 
+              a(href="#") Female Founders Conference
+            h5.conference__presentation.no-m-top.to-uppercase Presented by: Y compinator
+            p.conference__overview Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, commodi reiciendis repellat, autem exercitationem sunt molestias, laudantium animi minus consequuntur nihil impedit ab harum eius eligendi velit iste eos sed.
+        .conference.clearfix
+          figure.conference__image
+            a(href="#")
+              img(src="assets/images/img-2.jpg", alt="Conference")
+              figcaption Photo from the NYC event
+          .conference__details
+            h4.no-m-block.onion-brand Conferences
+            h2.conference__title.no-m-block 
+              a(href="#") Female Founders Conference
+            h5.conference__presentation.no-m-top.to-uppercase Presented by: Y compinator
+            p.conference__overview Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, commodi reiciendis repellat, autem exercitationem sunt molestias, laudantium animi minus consequuntur nihil impedit ab harum eius eligendi velit iste eos sed.
+        .conference.clearfix
+          figure.conference__image
+            a(href="#")
+              img(src="assets/images/img-2.jpg", alt="Conference")
+              figcaption Photo from the NYC event
+          .conference__details
+            h4.no-m-block.onion-brand Conferences
+            h2.conference__title.no-m-block 
+              a(href="#") Female Founders Conference
+            h5.conference__presentation.no-m-top.to-uppercase Presented by: Y compinator
+            p.conference__overview Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, commodi reiciendis repellat, autem exercitationem sunt molestias, laudantium animi minus consequuntur nihil impedit ab harum eius eligendi velit iste eos sed.
+        .conference.clearfix
+          figure.conference__image
+            a(href="#")
+              img(src="assets/images/img-2.jpg", alt="Conference")
+              figcaption Photo from the NYC event
+          .conference__details
+            h4.no-m-block.onion-brand Conferences
+            h2.conference__title.no-m-block 
+              a(href="#") Female Founders Conference
+            h5.conference__presentation.no-m-top.to-uppercase Presented by: Y compinator
+            p.conference__overview Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, commodi reiciendis repellat, autem exercitationem sunt molestias, laudantium animi minus consequuntur nihil impedit ab harum eius eligendi velit iste eos sed.
+      
+        .conferences__pagination.align-center
+          button.previous 
+            span.visually-hidden Previous
+          .items
+            //- index of the current conference
+            .items__current-item 1
+            //- conferences length
+            .items__length 4
+          button.next 
+            span.visually-hidden Next
+
+
+  section.page-section.featured-resources
+    .container.container--narrow
+      h2.page-section__title.no-m-top Featured Business Resources
+      ul.list.list--inline.list--no-bullets.clearfix
+        li.feature
+          figure.feature__thumb.m-auto--inline
+            a(href="")
+              img(src="assets/images/featimg-04.jpg", alt="Thumb")
+          h3.feature__title.m-auto--inline.no-m-bottom
+            a(href="") Conferences
+        li.feature
+          figure.feature__thumb.m-auto--inline 
+            a(href="")
+              img(src="assets/images/latest-2.png", alt="Thumb")
+          h3.feature__title.m-auto--inline.no-m-bottom
+            a(href="") Workshops 
+        li.feature
+          figure.feature__thumb.m-auto--inline 
+            a(href="")
+              img(src="assets/images/latest-3.png", alt="Thumb")
+          h3.feature__title.m-auto--inline.no-m-bottom
+            a(href="") Networking Events 
+        li.feature
+          figure.feature__thumb.m-auto--inline 
+            a(href="")
+              img(src="assets/images/img-3.png", alt="Thumb")
+          h3.feature__title.m-auto--inline.no-m-bottom
+            a(href="") VC / Angel lists by Industry 
+        li.feature
+          figure.feature__thumb.m-auto--inline 
+            a(href="")
+              img(src="assets/images/this-week.png", alt="Thumb")
+          h3.feature__title.m-auto--inline.no-m-bottom
+            a(href="") Program + Incubator New and deadlines
+        li.feature
+          figure.feature__thumb.m-auto--inline  
+            a(href="")
+              img(src="assets/images/latest-6.png", alt="Thumb")
+          h3.feature__title.m-auto--inline.no-m-bottom
+            a(href="") Network of Mentors
+                
+
+
+  block why-hidden-onions      
+    block config
+      - var sectionTitle = "Join 23,000 founders";
+    include components/_why-hidden-onions            
+            
+          
+          

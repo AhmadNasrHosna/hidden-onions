@@ -1,6 +1,9 @@
 .stories {
 
   .latest-stories {
+
+    &.index-option2 { border-top: 0 }
+
     border-block: 1px solid var(--border-light);
 
     .list {
