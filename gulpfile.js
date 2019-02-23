@@ -49,7 +49,7 @@ const { src, dest, task, watch, series, parallel } = require("gulp"),
         buildDir                  = './docs/', // Or dist, I renamed it to 'docs' for github pages
         tempDir                   = './.tmp/',
 
-        styleSRC                  = srcDir  + 'assets/styles/App.css',
+        styleSRC                  = srcDir  + 'assets/styles/*.css',
         styleDEST                 = tempDir + 'styles',
     
         htmlSRC                   = srcDir  + '*.pug',
@@ -300,7 +300,7 @@ function deleteDistFolder() { // Begin build with delete the current build folde
  * & Don't copy paths of DONTCopy */
 function copyExtraFiles() {
     const DONTCopy = [
-        `!${srcDir}index.pug`,
+        `!${srcDir}*.pug`,
         `!${srcDir}includes`,
         `!${srcDir}includes/**`,
         `!${srcDir}assets/images/**`,
@@ -326,10 +326,10 @@ function optimizeImages() {
                     {cleanupIDs: false}
                 ]
             }),
-            imageminPngquant({
+            /* imageminPngquant({
                 speed: 1,
                 quality: 50
-            }),
+            }), */
             imageminMozjpeg({
                 quality: 80
             }) 
@@ -349,7 +349,7 @@ function optimizeImages() {
 function revFiles() {
     const DONTCopy = [
         `!${tempDir}scripts/modernizr.js`,
-        `!${tempDir}index.html`, // a copy of index.html will not copy to `dist/assets`
+        `!${tempDir}*.html`, // a copy of index.html will not copy to `dist/assets`
         `!${tempDir}**/*.map`
     ];
     return src([tempDir+'**/*', ...DONTCopy]) // will copy ALL files with its folders
@@ -362,11 +362,16 @@ function revFiles() {
  * & Copy index.html from .tmp to dist folder */
 // This will work on injecting the full paths & outputs a path like this: '/docs/assets/styles/App.5e70335b.css' & the tool option (ignorePath) will remove '/docs' from the initial path.
 function injectFileNames() { 
-		return src(tempDir + 'index.html')
+		return src(tempDir + '*.html')
 				// All CSS files
-				.pipe(inject(src([buildDir + 'assets/styles/**/*.css'], {read: false}), {ignorePath: '/docs', addRootSlash: false}))
-				// All vendor js files inside head tag
-				.pipe(inject(src(buildDir + 'assets/scripts/vendor/*.js', {read: false}), {name: 'head', ignorePath: '/docs', addRootSlash: false}))
+				//.pipe(inject(src([buildDir + 'assets/styles/**/*.css'], {read: false}), {ignorePath: '/docs', addRootSlash: false}))
+        .pipe(inject(src(buildDir + 'assets/styles/App-index1*.css', {read: false}), {name: 'index1', ignorePath: '/docs', addRootSlash: false}))
+        .pipe(inject(src(buildDir + 'assets/styles/App-index2*.css', {read: false}), {name: 'index2', ignorePath: '/docs', addRootSlash: false}))
+        .pipe(inject(src(buildDir + 'assets/styles/App-resources*.css', {read: false}), {name: 'resources', ignorePath: '/docs', addRootSlash: false}))
+        .pipe(inject(src(buildDir + 'assets/styles/App-article*.css', {read: false}), {name: 'article', ignorePath: '/docs', addRootSlash: false}))
+
+        // All vendor js files inside head tag
+				.pipe(inject(src(buildDir + 'assets/scripts/vendor/*.js', {read: false}), {name: 'vendor', ignorePath: '/docs', addRootSlash: false}))
 				// All main js files before body close tag
 				.pipe(inject(src([buildDir + 'assets/scripts/*.js', `!${buildDir}/assets/scripts/vendor/**/*.js`,`!${buildDir}/assets/scripts/vendor`], {read: false}), {ignorePath: '/docs', addRootSlash: false}))
         .pipe(dest(buildDir));

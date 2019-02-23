@@ -1,11 +1,26 @@
 
 
 .breadcrumbs {
-  padding: 1.4em 2em;
-  
-  a {
+  letter-spacing: .04em;
+  font-size: 1rem;
+  padding: 20px;
+
+  @mixin at Small { 
     font-size: 1.2rem;
+    letter-spacing: .02em;
+    padding: 20px 30px;
+  }
+
+  a {
     font-weight: bold;
-    letter-spacing: .04em;
+
+    & + span::before {
+      content: " / ";
+      color: var(--black);
+    }
+  }
+
+  span { 
+    color: #b2b2b2;
   }
 }

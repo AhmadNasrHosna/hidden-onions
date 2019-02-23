@@ -1,5 +1,10 @@
 extends includes/base/_base-layout
-block config
-  - var page = 'How to build a brand with raving fans. | hidden onions.'
+
+block vars
+  - var page = 'hidden onions.';
+  - var cssFileName = 'App-index1.css';
+  - var injectName = 'index1';
+
 block content
-  include includes/_index-article-show
+  include includes/_index
+

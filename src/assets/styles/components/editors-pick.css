@@ -61,7 +61,7 @@
 
   &__label {
     margin-top: 3.5rem;
-    font-family: 'Newt Serif', serif;
+    font-family: var(--serif-1);
     padding-left: 1.2em;
     @mixin font-size 2.1;
     letter-spacing: -.01em;
@@ -155,7 +155,7 @@
       left: 6px;
       font-size: 44px;
       font-weight: 500;
-      color: #000;
+      color: var(--black);
       transform: translate(-51px, -13px);
       transition: all 300ms ease;
     }
@@ -178,13 +178,13 @@
       background: hsla(43, 28%, 80%, 1);
 
       &::before {
-        color: #fff;
+        color: var(--white);
         font-size: 64px;
         transform: translate(-45px, -34px) rotate(20deg)
       }
 
       &::after {
-        background: #000;
+        background: var(--black);
         box-shadow: 0 0 15px hsla(0, 0%, 0%, .8);
       }
     }
@@ -195,7 +195,7 @@
     }
 
     &__description {
-      font-family: 'Newt Serif', serif;
+      font-family: var(--serif-1);
       font-size: 1.35rem !important;
     }
 
@@ -258,7 +258,7 @@
     }
 
     &__label {
-      font-family: 'Newt Serif', serif;
+      font-family: var(--serif-1);
       font-weight: normal;
       font-style: italic;
       margin-bottom: .9rem;
@@ -295,13 +295,13 @@
 
       &:hover {
         a {
-          border-bottom: 2px solid #dad2be
+          border-bottom: 2px solid #dad2be;
         }
       }
     }
 
     &__view-story-link {
-      color: hsl(43, 27%, 65%);
+      color: var(--color-brand-dark);
       border-bottom: 1px solid hsl(43, 27%, 85%);
       padding-left: .1em;
       letter-spacing: .08em;
@@ -321,7 +321,7 @@
   }
 
   .founder-quote {
-    background: #fff;
+    background: var(--white);
     padding: .7em 1em 1.2em 1em;
     @media (min-width: 287px) { padding-left: 7.8em }
 
@@ -329,7 +329,7 @@
     @media (min-width: 370px) { margin-top: 10rem }
     @mixin at Medium { margin-top: 7rem }
 
-    box-shadow: 0 0 0 7px #000;
+    box-shadow: 0 0 0 7px var(--black);
     transition: all 300ms ease;
     position: relative;
 
@@ -372,20 +372,20 @@
       text-transform: uppercase;
       font-size: 1rem;
       letter-spacing: .11em;
-      color: #000;
-      border-bottom-color: #000;
+      color: var(--black);
+      border-bottom-color: var(--black);
       line-height: 1.4;
     }
 
 
     &:hover { 
        background-color: transparent;
-       box-shadow: 0 0 0 7px #000, 0 12px 18px rgba(0,0,0,.2);
+       box-shadow: 0 0 0 7px var(--black), 0 12px 18px rgba(0,0,0,.2);
        transform: translateY(-10px);
 
       .story__view-story-link {
-        color: hsl(43, 27%, 65%);
-        border-bottom-color: hsl(43, 27%, 65%);
+        color: var(--color-brand-dark);
+        border-bottom-color: var(--color-brand-dark);
       }
     }
 

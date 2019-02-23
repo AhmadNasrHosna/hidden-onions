@@ -1,9 +1,10 @@
 body {
   font-family: var(--primary-font);
-  font-size: 1.6rem;
+  @mixin font-size 1.6;
   line-height: 1.6;
-  background: #fff;
+  background: var(--white);
   color: var(--grey);
+
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
 }

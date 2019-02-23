@@ -1,5 +1,9 @@
 extends includes/base/_base-layout
-block config
+
+block vars
   - var page = 'How to build a brand with raving fans. | hidden onions.'
+  - var cssFileName = 'App-article.css';
+  - var injectName = 'article';
+  
 block content
   include includes/_index-article-show

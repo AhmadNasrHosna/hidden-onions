@@ -9,7 +9,7 @@
     line-height: 1.2;
     text-align: center;
     @mixin font-size 2.2;
-    font-family: "Newt Serif", serif;
+    font-family: var(--serif-1);
     font-style: italic;
     font-weight: 500;
     letter-spacing: -.03em; 
@@ -33,7 +33,7 @@
       letter-spacing: .08em;
       @mixin font-size 1;
       font-weight: 500;
-      color: #beb08e;
+      color: var(--color-brand-dark);
       border-bottom: 1px solid;
 
       @mixin at Small {
@@ -232,7 +232,7 @@
     }
 
     &__subtitle {
-      font-family: "Newt Serif",serif;
+      font-family: var(--serif-1);
       font-style: italic;
       letter-spacing: -.03em;
       line-height: 1.45;

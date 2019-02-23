@@ -51,6 +51,8 @@
 @import 'components/editors-pick';
 @import 'components/resources';
 @import 'components/breadcrumbs';
+@import 'components/article';
+@import 'components/social';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */
 @import 'utilities/floats';

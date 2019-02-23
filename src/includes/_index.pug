@@ -117,66 +117,67 @@ main.site-content
                         a(href="#") Taking a business from $0 to $5 million in revenue
                     p.story__description Interview with Tessa Thompson founder of Rarebit.
 
-    div(class="page-section latest-stories "  + currentPage)
+    div(class="latest-stories "  + currentPage)
       .container.container--narrow
-        h2.page-section__title.no-m-top The Latest
-        ul(class="list list--no-bullets clearfix")
-          li.story
-            figure.story__thumb 
-              img(src="assets/images/latest-1.png", alt="Story Thumb")
-            .story__overview
-              h4(class="story__label no-m-top onion-brand") Editors Pick
-              h3.story__title  
-                a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-              a(href="#" class="story__view-story-link") View Story
+        .latest-stories__inner.page-section
+          h2.page-section__title.no-m-top The Latest
+          ul(class="list list--no-bullets clearfix")
+            li.story
+              figure.story__thumb 
+                img(src="assets/images/latest-1.png", alt="Story Thumb")
+              .story__overview
+                h4(class="story__label no-m-top onion-brand") Editors Pick
+                h3.story__title  
+                  a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
+                a(href="#" class="story__view-story-link") View Story
 
-          li.story
-            figure.story__thumb 
-              img(src="assets/images/this-week.png", alt="Story Thumb")
-            .story__overview  
-              h4(class="story__label no-m-top onion-brand") Editors Pick
-              h3.story__title  
-                a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-              a(href="#" class="story__view-story-link") View Story
+            li.story
+              figure.story__thumb 
+                img(src="assets/images/this-week.png", alt="Story Thumb")
+              .story__overview  
+                h4(class="story__label no-m-top onion-brand") Editors Pick
+                h3.story__title  
+                  a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
+                a(href="#" class="story__view-story-link") View Story
 
-          li.story
-            figure.story__thumb 
-              img(src="assets/images/latest-2.png", alt="Story Thumb")
-            .story__overview
-              h4(class="story__label no-m-top onion-brand") Editors Pick
-              h3.story__title  
-                a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-              a(href="#" class="story__view-story-link") View Story
+            li.story
+              figure.story__thumb 
+                img(src="assets/images/latest-2.png", alt="Story Thumb")
+              .story__overview
+                h4(class="story__label no-m-top onion-brand") Editors Pick
+                h3.story__title  
+                  a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
+                a(href="#" class="story__view-story-link") View Story
 
-          li.story
-            figure.story__thumb 
-              img(src="assets/images/latest-3.png", alt="Story Thumb")
-            .story__overview
-              h4(class="story__label no-m-top onion-brand") Editors Pick
-              h3.story__title  
-                a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-              a(href="#" class="story__view-story-link") View Story
+            li.story
+              figure.story__thumb 
+                img(src="assets/images/latest-3.png", alt="Story Thumb")
+              .story__overview
+                h4(class="story__label no-m-top onion-brand") Editors Pick
+                h3.story__title  
+                  a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
+                a(href="#" class="story__view-story-link") View Story
 
 
-          li.story
-            figure.story__thumb 
-              img(src="assets/images/this-week.png", alt="Story Thumb")
-            .story__overview  
-              h4(class="story__label no-m-top onion-brand") Editors Pick
-              h3.story__title 
-                a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-              a(href="#" class="story__view-story-link") View Story
+            li.story
+              figure.story__thumb 
+                img(src="assets/images/this-week.png", alt="Story Thumb")
+              .story__overview  
+                h4(class="story__label no-m-top onion-brand") Editors Pick
+                h3.story__title 
+                  a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
+                a(href="#" class="story__view-story-link") View Story
 
-          li.story
-            figure.story__thumb 
-              img(src="assets/images/latest-4.png", alt="Story Thumb")
-            .story__overview  
-              h4(class="story__label no-m-top onion-brand") Editors Pick
-              h3.story__title  
-                a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
-              a(href="#" class="story__view-story-link") View Story 
+            li.story
+              figure.story__thumb 
+                img(src="assets/images/latest-4.png", alt="Story Thumb")
+              .story__overview  
+                h4(class="story__label no-m-top onion-brand") Editors Pick
+                h3.story__title  
+                  a(href="#") InVogue run by Tessa Thompson - she shares how she shuts down naysayers
+                a(href="#" class="story__view-story-link") View Story 
 
-        button(class="latest-stories__read-more-button button button--outline button--block-only-small button--block-center button--large-p-inline button--font-w-600")  Read more
+          button(class="latest-stories__read-more-button button button--outline button--block-only-small button--block-center button--large-p-inline button--font-w-600 generic-hover--black")  Read more
     
     .business-resources.page-section
       .container.container--narrow
@@ -208,8 +209,8 @@ main.site-content
                   a(href="#") Hiring and firing
                   a(href="#") Finding suppliers
     
-  block why-hidden-onions
-    block config
-      - var sectionTitle = "A platform to help you guys navigate the ultra hard, build-a-business world.";
-    include components/_why-hidden-onions
+block why-hidden-onions
+  block config
+    - var sectionTitle = "A platform to help you guys navigate the ultra hard, build-a-business world.";
+  include components/_why-hidden-onions
     

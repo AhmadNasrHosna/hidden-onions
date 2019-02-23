@@ -56,8 +56,8 @@
         }
 
         &:hover {
-          background-color: #000000;
-          color: #ffffff;
+          background-color: var(--black);
+          color: var(--white);
           border-color: transparent;
           box-shadow: 0 2px 7px hsla(0, 0%, 0%, .25);
           opacity: 1;
@@ -84,7 +84,7 @@
 
   .filtered-articles-status {
     p {
-      font-family: "Newt Serif", serif;
+      font-family: var(--serif-1);
       font-style: italic;
 
       span:first-child::after {
@@ -122,7 +122,7 @@
 
     &__topic-label {
       padding-left: 1.5em;
-      font-family: "Newt Serif", serif;
+      font-family: var(--serif-1);
       font-style: italic;
       font-weight: 500;
       @mixin font-size 1.7;
@@ -223,7 +223,7 @@
       margin-right: 2rem;
     }
 
-    border: 7px solid black;
+    border: 7px solid var(--black);
 
     &:not(:last-child) {
       margin-bottom: 3.6rem;
@@ -264,14 +264,14 @@
       @mixin font-size 1.95;
       line-height: 1.25;
       font-weight: 500;
-      font-family: "Buenard" ,serif;
+      font-family: var(--serif-2);
       margin: 1.75rem 0;
       margin-bottom: 0;
       font-weight: 700;
     }
 
     &__topic-label {
-      font-family: "Newt Serif", serif;
+      font-family: var(--serif-1);
       font-weight: 500;
       font-style: italic;
       margin-bottom: 0;
@@ -356,7 +356,7 @@
       }
 
       &__overview {
-        font-family: "Newt Serif",serif;
+        font-family: var(--serif-1);
         @mixin font-size 1.4;
         letter-spacing: .01em;
         line-height: 1.45;
@@ -376,7 +376,7 @@
 
       &:hover {
         background: var(--bg-light);
-        box-shadow: 0 0 0 7px black, 0 5px 18px hsla(0, 0%, 0%, .8);
+        box-shadow: 0 0 0 7px var(--black), 0 5px 18px hsla(0, 0%, 0%, .8);
         
         .article__title a { border-bottom: 2px solid #dad2be }
       }
@@ -426,7 +426,7 @@
       margin-top: 4.4rem;
 
       h4 {
-        font-family: "Newt Serif", serif;
+        font-family: var(--serif-1);
         font-weight: 500;
         font-style: italic;
         padding-left: 1.4em;
@@ -520,7 +520,7 @@
       &::before, &::after {
         content: "";
         display: block;
-        background: black;
+        background: var(--black);
         position: absolute;
       }
 
@@ -537,8 +537,8 @@
 
     .previous {
       &::after {
-        border-left: 1px solid #000;
-        border-top: 1px solid #000;
+        border-left: 1px solid var(--black);
+        border-top: 1px solid var(--black);
         transform: rotate(-45deg) translate(3px,-1px);;
       }
 
@@ -548,8 +548,8 @@
 
     .next {
       &::after {
-        border-right: 1px solid black;
-        border-bottom: 1px solid black;
+        border-right: 1px solid var(--black);
+        border-bottom: 1px solid var(--black);
         transform:  rotate(-45deg) translate(21px,17px);
       }
 
@@ -559,7 +559,7 @@
 
 
     .items {
-      font-family: "Newt Serif", serif;
+      font-family: var(--serif-1);
       font-style: italic;
       font-size: 18px;
       display: inline-block;

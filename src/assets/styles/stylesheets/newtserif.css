@@ -1,95 +1,95 @@
 @font-face {
     font-family: 'Newt Serif Demi';
-    src: url('../../../assets/fonts/newtserif/NewtSerifDemi-Italic.eot');
-    src: url('../../../assets/fonts/newtserif/NewtSerifDemi-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../../../assets/fonts/newtserif/NewtSerifDemi-Italic.woff2') format('woff2'),
-        url('../../../assets/fonts/newtserif/NewtSerifDemi-Italic.woff') format('woff'),
-        url('../../../assets/fonts/newtserif/NewtSerifDemi-Italic.ttf') format('truetype'),
-        url('../../../assets/fonts/newtserif/NewtSerifDemi-Italic.svg#NewtSerifDemi-Italic') format('svg');
+    src: url('../../assets/fonts/newtserif/NewtSerifDemi-Italic.eot');
+    src: url('../../assets/fonts/newtserif/NewtSerifDemi-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/newtserif/NewtSerifDemi-Italic.woff2') format('woff2'),
+        url('../../assets/fonts/newtserif/NewtSerifDemi-Italic.woff') format('woff'),
+        url('../../assets/fonts/newtserif/NewtSerifDemi-Italic.ttf') format('truetype'),
+        url('../../assets/fonts/newtserif/NewtSerifDemi-Italic.svg#NewtSerifDemi-Italic') format('svg');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Newt Serif Demi';
-    src: url('../../../assets/fonts/newtserif/NewtSerifDemi.eot');
-    src: url('../../../assets/fonts/newtserif/NewtSerifDemi.eot?#iefix') format('embedded-opentype'),
-        url('../../../assets/fonts/newtserif/NewtSerifDemi.woff2') format('woff2'),
-        url('../../../assets/fonts/newtserif/NewtSerifDemi.woff') format('woff'),
-        url('../../../assets/fonts/newtserif/NewtSerifDemi.ttf') format('truetype'),
-        url('../../../assets/fonts/newtserif/NewtSerifDemi.svg#NewtSerifDemi') format('svg');
+    src: url('../../assets/fonts/newtserif/NewtSerifDemi.eot');
+    src: url('../../assets/fonts/newtserif/NewtSerifDemi.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/newtserif/NewtSerifDemi.woff2') format('woff2'),
+        url('../../assets/fonts/newtserif/NewtSerifDemi.woff') format('woff'),
+        url('../../assets/fonts/newtserif/NewtSerifDemi.ttf') format('truetype'),
+        url('../../assets/fonts/newtserif/NewtSerifDemi.svg#NewtSerifDemi') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Newt Serif';
-    src: url('../../../assets/fonts/newtserif/NewtSerifBold.eot');
-    src: url('../../../assets/fonts/newtserif/NewtSerifBold.eot?#iefix') format('embedded-opentype'),
-        url('../../../assets/fonts/newtserif/NewtSerifBold.woff2') format('woff2'),
-        url('../../../assets/fonts/newtserif/NewtSerifBold.woff') format('woff'),
-        url('../../../assets/fonts/newtserif/NewtSerifBold.ttf') format('truetype'),
-        url('../../../assets/fonts/newtserif/NewtSerifBold.svg#NewtSerifBold') format('svg');
+    src: url('../../assets/fonts/newtserif/NewtSerifBold.eot');
+    src: url('../../assets/fonts/newtserif/NewtSerifBold.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/newtserif/NewtSerifBold.woff2') format('woff2'),
+        url('../../assets/fonts/newtserif/NewtSerifBold.woff') format('woff'),
+        url('../../assets/fonts/newtserif/NewtSerifBold.ttf') format('truetype'),
+        url('../../assets/fonts/newtserif/NewtSerifBold.svg#NewtSerifBold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Newt Serif';
-    src: url('../../../assets/fonts/newtserif/NewtSerif.eot');
-    src: url('../../../assets/fonts/newtserif/NewtSerif.eot?#iefix') format('embedded-opentype'),
-        url('../../../assets/fonts/newtserif/NewtSerif.woff2') format('woff2'),
-        url('../../../assets/fonts/newtserif/NewtSerif.woff') format('woff'),
-        url('../../../assets/fonts/newtserif/NewtSerif.ttf') format('truetype'),
-        url('../../../assets/fonts/newtserif/NewtSerif.svg#NewtSerif') format('svg');
+    src: url('../../assets/fonts/newtserif/NewtSerif.eot');
+    src: url('../../assets/fonts/newtserif/NewtSerif.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/newtserif/NewtSerif.woff2') format('woff2'),
+        url('../../assets/fonts/newtserif/NewtSerif.woff') format('woff'),
+        url('../../assets/fonts/newtserif/NewtSerif.ttf') format('truetype'),
+        url('../../assets/fonts/newtserif/NewtSerif.svg#NewtSerif') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Newt Serif';
-    src: url('../../../assets/fonts/newtserif/NewtSerifLight-Italic.eot');
-    src: url('../../../assets/fonts/newtserif/NewtSerifLight-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../../../assets/fonts/newtserif/NewtSerifLight-Italic.woff2') format('woff2'),
-        url('../../../assets/fonts/newtserif/NewtSerifLight-Italic.woff') format('woff'),
-        url('../../../assets/fonts/newtserif/NewtSerifLight-Italic.ttf') format('truetype'),
-        url('../../../assets/fonts/newtserif/NewtSerifLight-Italic.svg#NewtSerifLight-Italic') format('svg');
+    src: url('../../assets/fonts/newtserif/NewtSerifLight-Italic.eot');
+    src: url('../../assets/fonts/newtserif/NewtSerifLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/newtserif/NewtSerifLight-Italic.woff2') format('woff2'),
+        url('../../assets/fonts/newtserif/NewtSerifLight-Italic.woff') format('woff'),
+        url('../../assets/fonts/newtserif/NewtSerifLight-Italic.ttf') format('truetype'),
+        url('../../assets/fonts/newtserif/NewtSerifLight-Italic.svg#NewtSerifLight-Italic') format('svg');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Newt Serif';
-    src: url('../../../assets/fonts/newtserif/NewtSerifLight.eot');
-    src: url('../../../assets/fonts/newtserif/NewtSerifLight.eot?#iefix') format('embedded-opentype'),
-        url('../../../assets/fonts/newtserif/NewtSerifLight.woff2') format('woff2'),
-        url('../../../assets/fonts/newtserif/NewtSerifLight.woff') format('woff'),
-        url('../../../assets/fonts/newtserif/NewtSerifLight.ttf') format('truetype'),
-        url('../../../assets/fonts/newtserif/NewtSerifLight.svg#NewtSerifLight') format('svg');
+    src: url('../../assets/fonts/newtserif/NewtSerifLight.eot');
+    src: url('../../assets/fonts/newtserif/NewtSerifLight.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/newtserif/NewtSerifLight.woff2') format('woff2'),
+        url('../../assets/fonts/newtserif/NewtSerifLight.woff') format('woff'),
+        url('../../assets/fonts/newtserif/NewtSerifLight.ttf') format('truetype'),
+        url('../../assets/fonts/newtserif/NewtSerifLight.svg#NewtSerifLight') format('svg');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Newt Serif';
-    src: url('../../../assets/fonts/newtserif/NewtSerifBold-Italic.eot');
-    src: url('../../../assets/fonts/newtserif/NewtSerifBold-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../../../assets/fonts/newtserif/NewtSerifBold-Italic.woff2') format('woff2'),
-        url('../../../assets/fonts/newtserif/NewtSerifBold-Italic.woff') format('woff'),
-        url('../../../assets/fonts/newtserif/NewtSerifBold-Italic.ttf') format('truetype'),
-        url('../../../assets/fonts/newtserif/NewtSerifBold-Italic.svg#NewtSerifBold-Italic') format('svg');
+    src: url('../../assets/fonts/newtserif/NewtSerifBold-Italic.eot');
+    src: url('../../assets/fonts/newtserif/NewtSerifBold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/newtserif/NewtSerifBold-Italic.woff2') format('woff2'),
+        url('../../assets/fonts/newtserif/NewtSerifBold-Italic.woff') format('woff'),
+        url('../../assets/fonts/newtserif/NewtSerifBold-Italic.ttf') format('truetype'),
+        url('../../assets/fonts/newtserif/NewtSerifBold-Italic.svg#NewtSerifBold-Italic') format('svg');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Newt Serif';
-    src: url('../../../assets/fonts/newtserif/NewtSerif-Italic.eot');
-    src: url('../../../assets/fonts/newtserif/NewtSerif-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../../../assets/fonts/newtserif/NewtSerif-Italic.woff2') format('woff2'),
-        url('../../../assets/fonts/newtserif/NewtSerif-Italic.woff') format('woff'),
-        url('../../../assets/fonts/newtserif/NewtSerif-Italic.ttf') format('truetype'),
-        url('../../../assets/fonts/newtserif/NewtSerif-Italic.svg#NewtSerif-Italic') format('svg');
+    src: url('../../assets/fonts/newtserif/NewtSerif-Italic.eot');
+    src: url('../../assets/fonts/newtserif/NewtSerif-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/newtserif/NewtSerif-Italic.woff2') format('woff2'),
+        url('../../assets/fonts/newtserif/NewtSerif-Italic.woff') format('woff'),
+        url('../../assets/fonts/newtserif/NewtSerif-Italic.ttf') format('truetype'),
+        url('../../assets/fonts/newtserif/NewtSerif-Italic.svg#NewtSerif-Italic') format('svg');
     font-weight: normal;
     font-style: italic;
 }

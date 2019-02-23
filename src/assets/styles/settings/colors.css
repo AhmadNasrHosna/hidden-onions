@@ -1,8 +1,14 @@
 :root {
+  --color-brand: hsl(42, 26%, 80%);
+  --color-brand-dark: hsl(41, 27%, 65%);
+
   --bg-light: hsl(43, 28%, 95%);
   --bg-dark: hsla(43, 100%, 78%, 1);
   
   --border-light: hsl(0, 0%, 90%);
+  --border-dark: hsl(0, 0%, 80%);
 
   --grey-light: hsl(0, 0%, 44%);
+  --black: #000;
+  --white: #fff;
 }

@@ -23,22 +23,24 @@
     line-height: 1;
     padding: 0;
     box-shadow: none;
+    height: 1px;
   }
   &--primary {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--white);
     border-color: var(--primary-color);
   }
+  
   &--secondary {
-    background-color: #000;
-    color: #fff;
-    border-color: #000;
+    background-color: var(--black);
+    color: var(--white);
+    border-color: var(--black);
   }
   &--outline {
     background: transparent;
     box-shadow: none;
     &.button--secondary {
-      color: #000;
+      color: var(--black);
     }
   }
   
@@ -59,7 +61,7 @@
     padding-inline: 2.5em;
 
     @mixin at Small {
-      padding-inline: 5.4em;
+      padding-inline: 5.2em;
     }
   }
 

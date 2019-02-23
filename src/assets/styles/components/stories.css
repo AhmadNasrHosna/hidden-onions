@@ -2,12 +2,16 @@
 
   .latest-stories {
 
-    &.index-option2 { border-top: 0 }
+    &.index-option2 { 
+      .latest-stories__inner { border-top: 0 }
+    }
 
-    border-block: 1px solid var(--border-light);
+    &__inner {
+      border-block: 1px solid var(--border-dark);
+    }
 
     .list {
-      margin: 4.9rem 0 2.5rem
+      margin: 4.9rem 0 1rem
     }
 
     .story {
@@ -51,7 +55,7 @@
       }
 
       &__label {
-        font-family: 'Newt Serif', serif;
+        font-family: var(--serif-1);
         font-weight: normal;
         font-style: italic;
         margin-bottom: .9rem;
@@ -107,7 +111,7 @@
 
       &:hover {
         .story__view-story-link {
-          color: hsl(41, 27%, 65%);
+          color: var(--color-brand-dark);
           font-weight: bold;
         }
       }
@@ -116,13 +120,6 @@
 
     &__read-more-button {
       @mixin font-size 1.6;
-
-      &:hover {
-        background: #000000;
-        color: #ffffff;
-        border-color: transparent;
-        box-shadow: 0 2px 7px rgba(0, 0, 0, .25);
-      }
     }
   }
 
@@ -236,8 +233,8 @@
               }
 
               &:hover {
-                background-color: #000000;
-                color: #ffffff;
+                background-color: var(--black);
+                color: var(--white);
                 border-color: transparent;
                 box-shadow: 0 2px 7px hsla(0, 0%, 0%, .25);
               }

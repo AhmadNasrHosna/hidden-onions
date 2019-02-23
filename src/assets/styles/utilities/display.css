@@ -1,5 +1,6 @@
 .display-block {
-  
+  display: block;
+
   &--atSmall {
     @mixin at Small {
       display: block;
@@ -19,3 +20,54 @@
   }
 }
 
+
+
+.display-inline-block {
+  display: inline-block;
+  
+  &--atSmall {
+    @mixin at Small {
+      display: inline-block;
+    }
+  }
+
+  &--atMedium {
+    @mixin at Medium {
+      display: inline-block;
+    }
+  }
+  
+  &--atLarge {
+    @mixin at Large {
+      display: inline-block;
+    }
+  }
+}
+
+.display-none {
+  display: none;
+
+  &--atSmall {
+    display: none;
+
+    @mixin at Small {
+      display: block;
+    }
+  }
+
+  &--atMedium {
+    display: none;
+
+    @mixin at Medium {
+      display: block;
+    }
+  }
+  
+  &--atLarge {
+    display: none;
+    
+    @mixin at Large {
+      display: block;
+    }
+  }
+}

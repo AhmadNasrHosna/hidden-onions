@@ -5,8 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1.7em;
+    padding: 0 20px;
     position: relative;
+
+    @mixin at Small { padding: 0 30px }
   }
 
   &__brand {
@@ -21,7 +23,7 @@
 
         &:active,
         &:focus {
-          box-shadow: 0 0 0 4px white, 0 0 0 8px hsl(43, 71%, 80%);
+          box-shadow: 0 0 0 4px var(--white), 0 0 0 8px hsl(43, 71%, 80%);
         }
       }
     }
@@ -32,7 +34,7 @@
 .site-header__nav {
   display: none;
   position: absolute;
-  background: #fff;
+  background: var(--white);
   width: 100%;
   left: 0;
   top: 77px;

@@ -1,6 +1,5 @@
 head
   meta(charset='utf-8')
-  // TODO: Enter page name variable
   title #{page}
 
   meta(name='description', content='')
@@ -8,9 +7,9 @@ head
   link(rel='shortcut icon', href='/favicon.ico')
   meta(name='theme-color' content="#000")
 
-  // inject:css 
-  link(rel="stylesheet", href="styles/App.css")
+  <!-- #{injectName}:css-->
+  link(rel="stylesheet", href=`styles/${cssFileName}`)
   // endinject
-  // head:js
+  // vendor:js
   <script src="scripts/vendor/Vendor.js"></script>
   // endinject
